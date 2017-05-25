@@ -1,0 +1,13 @@
+// Main SCSS Reporitory
+
+@import 'variables/variables'; //Variables colors etc
+@import 'variables/mixins'; //Mixins and code snips
+@import 'styles/fpreset'; //Custom Normalizer
+@import 'styles/global'; //Global styles, across all divs/sections
+@import 'styles/footer'; //Footer Styles
+@import 'styles/navigation';// Focus on NAV and navigation elements
+@import 'styles/Paralax'; //Specifc styles for the Paralax effect
+@import 'styles/Forms'; //form specific styles
+
+// Note Printer Styles must be the last styles seen. 
+@import 'styles/printer'; //Formats page bettter for printing 

@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Yesteryear');
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    
+}
+hr {
+    margin: 25px 0;
+}
+h1 {
+    font-size: 4.2rem;
+    
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 3.0rem;
+}
+h4 {
+    font-size: 2.4rem;
+}
+h5 {
+    font-size: 1.8rem;
+}
+h6 {
+    font-size: 1.4rem;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color: #D2691E;
+    text-decoration: none;
+}
+a:visited {
+    color: #556B2F;
+}
+a:hover {
+    color: #FF6347;
+}
+a:active {
+    color: #32CD32;
+}
+.casualHead {
+    font-family: 'Roboto', sans-serif;
+}
+.fineHead {
+    font-family: 'Yesteryear', serif;
+}
+section#reverse1 {
+    height: 422px;
+    max-width: 750px;
+    background-image: url(images/perfect%20retro%20cabin%20room.jpg);
+    margin: 0 auto;
+    position: relative
+}
+section#reverse2 {
+    height: 625px;
+    max-width: 625px;
+    background-image: url(images/take-heart-amelia-hedgehog-sophiahsin.jpg);
+    margin: 0 auto;
+    position: relative
+}
+section#reverse3 {
+    height: 478px;
+    max-width: 849px;
+    background-image: url(images/slopCopy.jpg);
+    margin: 0 auto;
+    position: relative
+}
+section#reverse3 .reverseTransparent {
+    top: auto;
+    bottom: 25px;
+}
+.fineHead h1 {
+    font-size: 4.5rem;
+    margin-left: 5px;
+}
+.reverseTransparent {
+    color: rgba(255,255,255,.9);
+    background-color: rgba(0,0,0,.4);
+    text-align: center;
+    vertical-align: middle;
+    padding: 50px;
+    border: 1px solid rgba(255,255,255,.9);
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 25px;
+    left: 12.5%;
+}
+.reverseTransparent p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+}
