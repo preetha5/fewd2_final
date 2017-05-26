@@ -1,7 +1,8 @@
 // Main SCSS Reporitory
 
-
-@import 'styles/fpreset'; //  Must alwasy be first 
+@import 'variables/variables'; // Colors and other variables
+@import 'variables/mixins'; //mixins or other shortcuts.
+@import 'styles/fpreset'; //  Must alwasy be infront of all other CSS
 
 @import 'styles/global';
 @import 'styles/grid';
