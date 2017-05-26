@@ -1,0 +1,26 @@
+section#reverse1 {
+    height: 422px;
+    max-width: 750px;
+    background-image: url(images/perfect%20retro%20cabin%20room.jpg);
+    margin: 0 auto;
+    position: relative
+}
+section#reverse2 {
+    height: 625px;
+    max-width: 625px;
+    background-image: url(images/take-heart-amelia-hedgehog-sophiahsin.jpg);
+    margin: 0 auto;
+    position: relative
+}
+section#reverse3 {
+    height: 478px;
+    max-width: 849px;
+    background-image: url(images/slopCopy.jpg);
+    margin: 0 auto;
+    position: relative
+}
+
+section#reverse3 .reverseTransparent {
+    top: auto;
+    bottom: 25px;
+}
