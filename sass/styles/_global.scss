@@ -35,23 +35,23 @@ ul {
     list-style-type: none;
 }
 a {
-    color: #D2691E;
+    color: $anchorStd;
     text-decoration: none;
 }
 a:visited {
-    color: #556B2F;
+    color: $anhorVis;
 }
 a:hover {
-    color: #FF6347;
+    color: $anchorHov;
 }
 a:active {
-    color: #32CD32;
+    color:$anchorActv;
 }
 .casualHead {
-    font-family: 'Roboto', sans-serif;
+    font-family: $robot;
 }
 .fineHead {
-    font-family: 'Yesteryear', serif;
+    font-family: $yesterYr;
 }
 
 
