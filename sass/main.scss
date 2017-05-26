@@ -1,6 +1,16 @@
 // Main SCSS Reporitory
 
+
+@import 'styles/fpreset'; //  Must alwasy be first 
+
 @import 'styles/global';
 @import 'styles/grid';
 @import 'styles/navigation';
 @import 'styles/gallery';
+@import 'styles/footer';
+@import 'styles/forms';
+@import 'styles/paralax';
+
+
+//Printer styles must alawys be the last thing to import
+@import 'styles/printer';
