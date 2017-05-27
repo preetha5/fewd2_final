@@ -48,16 +48,7 @@ a:hover {
 a:active {
     color:$anchorActv;
 }
-// Special Styles
-.bold {
-    font-weight: 700;
-}
-.capitalize {
-    text-transform: capitalize;
-}
-.uppercase {
-    text-transform: uppercase;
-}
+
 
 // Font classes
 .casualHead {
@@ -71,33 +62,4 @@ a:active {
     margin-left: 5px;
 }
 
-/*  alignment styles and more  */
-.tx-cntr {
-    text-align: center;
-}
-.tx-left {
-    text-align: left;
-}
-.tx-r {
-    text-align: right;
-}
 
-/* Specialty Presentation styles */
-.reverseTransparent {
-    color: rgba(255,255,255,.9);
-    background-color: rgba(0,0,0,.4);
-    text-align: center;
-    vertical-align: middle;
-    padding: 50px;
-    border: 1px solid rgba(255,255,255,.9);
-    width: 75%;
-    height: auto;
-    margin: 0 auto;
-    position: absolute;
-    top: 25px;
-    left: 12.5%;
-}
-.reverseTransparent p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
-}

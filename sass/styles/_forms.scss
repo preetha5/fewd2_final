@@ -11,10 +11,11 @@ form {
 	}
 
 	input, textarea {
-		font:italic 1.6em $robot;
+		font:italic 1.4rem/2.5 $robot;
 		color: #999;
 		font-weight: lighter;
 		margin: .5em;
+		padding: .1em .5em;;
 		display: block;
 		width:95%;
 
@@ -35,8 +36,23 @@ form {
 		}
 	}
 }
+/*Input field styles */
+.field-border-none {
+	border:none;
+	background-color: $btnBrdrLite;
+}
 
+.field-rnd-crnr {
+	border: solid 1px $btnBrdrDrk;
+	border-radius: .5rem;
+}
+.field-theme-night {
+	background-color: $btnActive;
+	color: $btnBrdrLite;
+	border: solid 1px $btnColor;
+}
 
+/* Button Styles */
 .btnFlat {
 	border: solid 2px $btnBrdrDrk;
 	background-color: inherit;

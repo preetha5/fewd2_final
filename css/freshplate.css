@@ -79,15 +79,6 @@ a:hover {
 a:active {
   color: #32CD32; }
 
-.bold {
-  font-weight: 700; }
-
-.capitalize {
-  text-transform: capitalize; }
-
-.uppercase {
-  text-transform: uppercase; }
-
 .casualHead {
   font-family: "Roboto", sans-serif; }
 
@@ -97,6 +88,27 @@ a:active {
 .fineHead h1 {
   font-size: 4.5rem;
   margin-left: 5px; }
+
+/* Helper classes for the framework */
+/*Float classes*/
+.onLeft {
+  float: left; }
+
+.onRight {
+  float: right; }
+
+/* Utility Classes */
+.clearFix {
+  clear: both; }
+
+.bold {
+  font-weight: 700; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.uppercase {
+  text-transform: uppercase; }
 
 /*  alignment styles and more  */
 .tx-cntr {
@@ -126,16 +138,6 @@ a:active {
 .reverseTransparent p {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem; }
-
-/* Helper classes for the framework */
-.onLeft {
-  float: left; }
-
-.onRight {
-  float: right; }
-
-.clearFix {
-  clear: both; }
 
 /* GRID SYSTEM */
 /* 960px wide grid - 12 column grid solution */
@@ -274,10 +276,11 @@ form {
     padding: .1em;
     vertical-align: center; }
   form input, form textarea {
-    font: italic 1.6em "Roboto", sans-serif;
+    font: italic 1.4rem/2.5 "Roboto", sans-serif;
     color: #999;
     font-weight: lighter;
     margin: .5em;
+    padding: .1em .5em;
     display: block;
     width: 95%; }
   form button {
@@ -292,6 +295,21 @@ form {
       background-color: #000;
       border: solid 2px #eee; }
 
+/*Input field styles */
+.field-border-none {
+  border: none;
+  background-color: #eee; }
+
+.field-rnd-crnr {
+  border: solid 1px #999;
+  border-radius: .5rem; }
+
+.field-theme-night {
+  background-color: #000;
+  color: #eee;
+  border: solid 1px #bbb; }
+
+/* Button Styles */
 .btnFlat {
   border: solid 2px #999;
   background-color: inherit; }
