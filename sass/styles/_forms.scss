@@ -1,1 +1,98 @@
 // Form Styles
+
+form {
+	padding: 0 .5em;
+	label {
+		display:none;
+		font: normal 1.6em/1.3 $robot;
+		margin:.5em;
+		padding: .1em;
+		vertical-align: center;
+	}
+
+	input, textarea {
+		font:italic 1.6em $robot;
+		color: #999;
+		font-weight: lighter;
+		margin: .5em;
+		display: block;
+		width:95%;
+
+	}
+	textarea {
+
+	}
+	button {
+		background-color: $btnColor;
+		padding: 15px;
+		margin: .3em;
+		font: bolder 1.6em/1.2 $robot;
+		&:hover {
+		background-color: $btnHover;
+		}
+		&:active {
+			color: $anchorLit;
+			background-color: $btnActive;
+			border: solid 2px $btnBrdrLite;
+		}
+	}
+
+}
+.btnFlat {
+	border: solid 2px $btnBrdrDrk;
+	background-color: inherit;
+	&:active {
+		border:solid 2px $btnBrdrLite;
+	}
+}
+.btn3d {
+	background-color: $btnColor;
+	border-top: solid 10px $btnBrdrLite;
+	border-left: solid 10px $btnBrdrLite;
+	border-bottom: solid 10px $btnBrdrDrk;
+	border-right: solid 10px $btnBrdrDrk;
+	&:active {
+	border-top: solid 10px $btnBrdrDrk;
+	border-left: solid 10px $btnBrdrDrk;
+	border-bottom: solid 10px $btnBrdrLite;
+	border-right: solid 10px $btnBrdrLite;
+	}
+
+}
+.btn3d-rnd {
+	background-color: $btnColor;
+	border-top: solid 10px $btnBrdrLite;
+	border-left: solid 10px $btnBrdrLite;
+	border-bottom: solid 10px $btnBrdrDrk;
+	border-right: solid 10px $btnBrdrDrk;
+	border-radius: 50%;
+	&:active {
+	border-top: solid 10px $btnBrdrDrk;
+	border-left: solid 10px $btnBrdrDrk;
+	border-bottom: solid 10px $btnBrdrLite;
+	border-right: solid 10px $btnBrdrLite;
+	}
+
+}
+
+
+@media screen and (min-width:600px){
+	form {
+
+		margin: 1%;
+		label {
+			display: inline-block;
+
+			}
+		input {
+			display: inline-block;
+			}
+		textarea {
+			display: block;
+			width: 50%;
+			}
+		button  {
+			padding: 15px 10px;
+		}
+	}
+}

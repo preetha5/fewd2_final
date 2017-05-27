@@ -8,7 +8,6 @@
 [class*="col-"] {
     width: 100%;
     float: left;
-    padding: 15px;
 }
 
 .row:after{
@@ -20,10 +19,10 @@
 /*******Media Queries ********/
 
 /* Mobile landscape */
-@media screen and (min-width: 600px){
-.col-ml-1 {width:8.33%;}
+@media screen and (min-width: 600px) and (orientation : landscape) {
+.col-ml-1 {width:8.33%; height: auto; }
 .col-ml-2 {width: 16.66%;}
-.col-ml-3 {width: 25%;}
+.col-ml-3 {width: 25%; height: auto;}
 .col-ml-4 {width: 33.33%;}
 .col-ml-5 {width: 41.66%;}
 .col-ml-6 {width: 50%;}
@@ -32,7 +31,7 @@
 .col-ml-9 {width: 75%;}
 .col-ml-10 {width: 83.33%;}
 .col-ml-11 {width: 91.66%;}
-.col-ml-12 {width: 100%;}   
+.col-ml-12 {width: 100%;}
 }
 
 /* Tablet portrait */
