@@ -37,10 +37,7 @@ hr {
 section.printOnly {
   display: none; }
 
-.clrfloat {
-  clear: both;
-  height: 0; }
-
+/* General TAG Formats */
 p {
   font-size: 1.6rem;
   line-height: 1.5; }
