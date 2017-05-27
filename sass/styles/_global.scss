@@ -51,18 +51,41 @@ a:hover {
 a:active {
     color:$anchorActv;
 }
+// Special Styles
+.bold {
+    font-weight: 700;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+// Font classes
 .casualHead {
     font-family: $robot;
 }
 .fineHead {
     font-family: $yesterYr;
 }
-
-
 .fineHead h1 {
     font-size: 4.5rem;
     margin-left: 5px;
 }
+
+/*  alignment styles and more  */
+.tx-cntr {
+    text-align: center;
+}
+.tx-left {
+    text-align: left;
+}
+.tx-r {
+    text-align: right;
+}
+
+/* Specialty Presentation styles */
 .reverseTransparent {
     color: rgba(255,255,255,.9);
     background-color: rgba(0,0,0,.4);

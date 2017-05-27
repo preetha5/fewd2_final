@@ -4,8 +4,8 @@
 @import url("https://fonts.googleapis.com/css?family=Yesteryear");
 html {
   font-size: 10px;
-  line-height: 1.2;
-  /*Set default lin e spacing*/
+  line-height: 1.4;
+  /*Set default line spacing*/
   -ms-text-size-adjust: 100%;
   /*Font fix for Windows phones when swapping  disply portait v landscape*/
   -webkit-text-size-adjust: 100%;
@@ -20,6 +20,7 @@ article, aside, audio, figcaption, figure, footer, header, nav, section, main, v
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
   color: #444; }
 
 hr {
@@ -81,6 +82,15 @@ a:hover {
 a:active {
   color: #32CD32; }
 
+.bold {
+  font-weight: 700; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.uppercase {
+  text-transform: uppercase; }
+
 .casualHead {
   font-family: "Roboto", sans-serif; }
 
@@ -91,6 +101,17 @@ a:active {
   font-size: 4.5rem;
   margin-left: 5px; }
 
+/*  alignment styles and more  */
+.tx-cntr {
+  text-align: center; }
+
+.tx-left {
+  text-align: left; }
+
+.tx-r {
+  text-align: right; }
+
+/* Specialty Presentation styles */
 .reverseTransparent {
   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(0, 0, 0, 0.4);
