@@ -19,9 +19,7 @@ form {
 		width:95%;
 
 	}
-	textarea {
 
-	}
 	button {
 		background-color: $btnColor;
 		padding: 15px;
@@ -36,10 +34,19 @@ form {
 			border: solid 2px $btnBrdrLite;
 		}
 	}
-
 }
+
+
 .btnFlat {
 	border: solid 2px $btnBrdrDrk;
+	background-color: inherit;
+	&:active {
+		border:solid 2px $btnBrdrLite;
+	}
+}
+.btnFlat-rnd-crnr {
+	border: solid 2px $btnBrdrDrk;
+	border-radius: .5em;
 	background-color: inherit;
 	&:active {
 		border:solid 2px $btnBrdrLite;
@@ -72,13 +79,27 @@ form {
 	border-bottom: solid 10px $btnBrdrLite;
 	border-right: solid 10px $btnBrdrLite;
 	}
+}
+.btn3d-rnd-crnr {
+	background-color: $btnColor;
+	border-top: solid 5px $btnBrdrLite;
+	border-left: solid 5px $btnBrdrLite;
+	border-bottom: solid 5px $btnBrdrDrk;
+	border-right: solid 5px $btnBrdrDrk;
+	border-radius: .5em;
+	&:active {
+	border-top: solid 5px $btnBrdrDrk;
+	border-left: solid 5px $btnBrdrDrk;
+	border-bottom: solid 5px $btnBrdrLite;
+	border-right: solid 5px $btnBrdrLite;
+	}
 
 }
 
 
-@media screen and (min-width:600px){
-	form {
 
+@media screen and (min-width:600px) {
+	form {
 		margin: 1%;
 		label {
 			display: inline-block;

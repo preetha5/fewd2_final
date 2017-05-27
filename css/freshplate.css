@@ -280,6 +280,13 @@ form {
   .btnFlat:active {
     border: solid 2px #eee; }
 
+.btnFlat-rnd-crnr {
+  border: solid 2px #777;
+  border-radius: .5em;
+  background-color: inherit; }
+  .btnFlat-rnd-crnr:active {
+    border: solid 2px #eee; }
+
 .btn3d {
   background-color: #bbb;
   border-top: solid 10px #eee;
@@ -304,6 +311,19 @@ form {
     border-left: solid 10px #777;
     border-bottom: solid 10px #eee;
     border-right: solid 10px #eee; }
+
+.btn3d-rnd-crnr {
+  background-color: #bbb;
+  border-top: solid 5px #eee;
+  border-left: solid 5px #eee;
+  border-bottom: solid 5px #777;
+  border-right: solid 5px #777;
+  border-radius: .5em; }
+  .btn3d-rnd-crnr:active {
+    border-top: solid 5px #777;
+    border-left: solid 5px #777;
+    border-bottom: solid 5px #eee;
+    border-right: solid 5px #eee; }
 
 @media screen and (min-width: 600px) {
   form {
