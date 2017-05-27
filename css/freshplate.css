@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Roboto:700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Yesteryear");
+
 html {
   font-size: 10px;
   line-height: 1.2;
@@ -17,6 +18,7 @@ article, aside, audio, figcaption, figure, footer, header, nav, section, main, v
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -35,6 +37,7 @@ hr {
 
 section.printOnly {
   display: none; }
+
 
 p {
   font-size: 1.6rem;
@@ -121,9 +124,11 @@ a:active {
 /* All rows should be wrapped in a div */
 /* All columns should be wrapped in a 'row' div and add up to 12 per row */
 /* For mobile portrait phones all columns will take 100% */
+
 [class*="col-"] {
   width: 100%;
   float: left; }
+
 
 .row:after {
   content: "";
@@ -132,6 +137,7 @@ a:active {
 
 /*******Media Queries ********/
 /* Mobile landscape */
+
 @media screen and (min-width: 600px) and (orientation: landscape) {
   .col-ml-1 {
     width: 8.33%; }
@@ -168,6 +174,7 @@ a:active {
 
   .col-ml-12 {
     width: 100%; } }
+
 /* Tablet portrait */
 @media screen and (min-width: 768px) {
   .col-tb-1 {
@@ -206,6 +213,7 @@ a:active {
   .col-tb-12 {
     width: 100%; } }
 /* Large screens */
+
 @media screen and (min-width: 1200px) {
   .col-lg-1 {
     width: 8.33%; }

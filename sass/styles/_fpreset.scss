@@ -1,4 +1,4 @@
-// Fresh Plate sNormalize
+// Fresh Plate Normalize
 
 html {
 	font-size: 10px;
@@ -30,6 +30,9 @@ hr {
 [hidden] {
   display: none;
 }
+	// A generic section class to be used for an area that will only show when printerd.
 section.printOnly {
 	display:none;
+
 }
+
