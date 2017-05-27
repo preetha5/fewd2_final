@@ -12,7 +12,7 @@ html {
   /*Font fix for IOS phonds when swapping  disply portait v landscape*/ }
 
 /*IE 9 Display type fix */
-article, aside, audio, figcaption, figure, footer, header, nav, section, main, video, ul, ol, div, section {
+article, aside, audio, blockquote, figcaption, figure, footer, h1, h2, h3, h4, h5, h6, header, nav, p, section, main, video, ul, ol, div, section {
   display: block;
   padding: 0;
   margin: 0;
