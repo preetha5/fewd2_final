@@ -1,135 +1,74 @@
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Roboto:700,700i,900,900i");
-@import url("https://fonts.googleapis.com/css?family=Yesteryear");
-html { font-size: 10px; line-height: 1.2; /*Set default lin e spacing*/ -ms-text-size-adjust: 100%; /*Font fix for Windows phones when swapping  disply portait v landscape*/ -webkit-text-size-adjust: 100%; /*Font fix for IOS phonds when swapping  disply portait v landscape*/ }
+/*
+Error: Invalid CSS after "<<<<<<< HEAD": expected "{", was "}"
+        on line 37 of sass/styles/_fpreset.scss
+        from line 5 of sass/main.scss
 
-/*IE 9 Display type fix */
-article, aside, audio, figcaption, figure, footer, header, nav, section, main, video { display: block; padding: 0; margin: 0; box-sizing: border-box; }
+32: }
+33: 	// A generic section class to be used for an area that will only show when printerd.
+34: section.printOnly {
+35: 	display:none;
+36: <<<<<<< HEAD
+37: 	}
+38: =======
+39: }
+40: >>>>>>> 3f1ea2039c4515571def581fe0f7e9105034b4fa
 
-body { font-family: 'Open Sans', sans-serif; color: #444; }
-
-hr { box-sizing: content-box; /*Firefox display fix */ /*fix Horizontal Rule display in IE/Edge */ height: 0; overflow: visible; }
-
-/* IE 10 Hidden vs None display type fix */
-[hidden] { display: none; }
-
-section.printOnly { display: none; }
-
-.clrfloat { clear: both; height: 0; }
-
-p { font-size: 1.6rem; line-height: 1.5; }
-
-hr { margin: 25px 0; }
-
-h1 { font-size: 4.2rem; }
-
-h2 { font-size: 3.6rem; }
-
-h3 { font-size: 3.0rem; }
-
-h4 { font-size: 2.4rem; }
-
-h5 { font-size: 1.8rem; }
-
-h6 { font-size: 1.4rem; }
-
-ul { list-style-type: none; }
-
-a { color: #D2691E; text-decoration: none; }
-
-a:visited { color: #556B2F; }
-
-a:hover { color: #FF6347; }
-
-a:active { color: #32CD32; }
-
-.casualHead { font-family: "Roboto", sans-serif; }
-
-.fineHead { font-family: "Yesteryear", serif; }
-
-.fineHead h1 { font-size: 4.5rem; margin-left: 5px; }
-
-.reverseTransparent { color: rgba(255, 255, 255, 0.9); background-color: rgba(0, 0, 0, 0.4); text-align: center; vertical-align: middle; padding: 50px; border: 1px solid rgba(255, 255, 255, 0.9); width: 75%; height: auto; margin: 0 auto; position: absolute; top: 25px; left: 12.5%; }
-
-.reverseTransparent p { font-family: 'Open Sans', sans-serif; font-size: 1.6rem; }
-
-/* GRID SYSTEM */
-/* 960px wide grid - 12 column grid solution */
-/* Each column width - 100%/12 = 8.33% */
-/* All rows should be wrapped in a div */
-/* All columns should be wrapped in a 'row' div and add up to 12 per row */
-/* For mobile portrait phones all columns will take 100% */
-[class*="col-"] { width: 100%; float: left; }
-
-.row:after { content: ""; clear: both; display: table; }
-
-/*******Media Queries ********/
-/* Mobile landscape */
-@media screen and (min-width: 600px) and (orientation: landscape) { .col-ml-1 { width: 8.33%; height: auto; }
-  .col-ml-2 { width: 16.66%; }
-  .col-ml-3 { width: 25%; height: auto; }
-  .col-ml-4 { width: 33.33%; }
-  .col-ml-5 { width: 41.66%; }
-  .col-ml-6 { width: 50%; }
-  .col-ml-7 { width: 58.33%; }
-  .col-ml-8 { width: 66.66%; }
-  .col-ml-9 { width: 75%; }
-  .col-ml-10 { width: 83.33%; }
-  .col-ml-11 { width: 91.66%; }
-  .col-ml-12 { width: 100%; } }
-/* Tablet portrait */
-@media screen and (min-width: 768px) { .col-tb-1 { width: 8.33%; }
-  .col-tb-2 { width: 16.66%; }
-  .col-tb-3 { width: 25%; }
-  .col-tb-4 { width: 33.33%; }
-  .col-tb-5 { width: 41.66%; }
-  .col-tb-6 { width: 50%; }
-  .col-tb-7 { width: 58.33%; }
-  .col-tb-8 { width: 66.66%; }
-  .col-tb-9 { width: 75%; }
-  .col-tb-10 { width: 83.33%; }
-  .col-tb-11 { width: 91.66%; }
-  .col-tb-12 { width: 100%; } }
-/* Large screens */
-@media screen and (min-width: 1200px) { .col-lg-1 { width: 8.33%; }
-  .col-lg-2 { width: 16.66%; }
-  .col-lg-3 { width: 25%; }
-  .col-lg-4 { width: 33.33%; }
-  .col-lg-5 { width: 41.66%; }
-  .col-lg-6 { width: 50%; }
-  .col-lg-7 { width: 58.33%; }
-  .col-lg-8 { width: 66.66%; }
-  .col-lg-9 { width: 75%; }
-  .col-lg-10 { width: 83.33%; }
-  .col-lg-11 { width: 91.66%; }
-  .col-lg-12 { width: 100%; } }
-form { padding: 0 .5em; }
-form label { display: none; font: normal 1.6em/1.3 "Roboto", sans-serif; margin: .5em; padding: .1em; vertical-align: center; }
-form input, form textarea { font: italic 1.6em "Roboto", sans-serif; color: #999; font-weight: lighter; margin: .5em; display: block; width: 95%; }
-form button { background-color: #bbb; padding: 15px; margin: .3em; font: bolder 1.6em/1.2 "Roboto", sans-serif; }
-form button:hover { background-color: #ddd; }
-form button:active { color: #eee; background-color: #000; border: solid 2px #eee; }
-
-.btnFlat { border: solid 2px #777; background-color: inherit; }
-.btnFlat:active { border: solid 2px #eee; }
-
-.btn3d { background-color: #bbb; border-top: solid 10px #eee; border-left: solid 10px #eee; border-bottom: solid 10px #777; border-right: solid 10px #777; }
-.btn3d:active { border-top: solid 10px #777; border-left: solid 10px #777; border-bottom: solid 10px #eee; border-right: solid 10px #eee; }
-
-.btn3d-rnd { background-color: #bbb; border-top: solid 10px #eee; border-left: solid 10px #eee; border-bottom: solid 10px #777; border-right: solid 10px #777; border-radius: 50%; }
-.btn3d-rnd:active { border-top: solid 10px #777; border-left: solid 10px #777; border-bottom: solid 10px #eee; border-right: solid 10px #eee; }
-
-@media screen and (min-width: 600px) { form { margin: 1%; }
-  form label { display: inline-block; }
-  form input { display: inline-block; }
-  form textarea { display: block; width: 50%; }
-  form button { padding: 15px 10px; } }
-@media print { header[role="banner"], footer, nav { display: none; }
-  main, article { width: 90%; margin: 0px; padding: 0px; }
-  html, body { font: normal 1em serif; color: #000; background-color: none; -webkit-box-shadow: none; box-shadow: none; text-shadow: none; }
-  a { font: italic 1em 'Times New Roman', Times, serif; color: #666; }
-  a:after { content: "( " attr(href) " )"; }
-  section.printOnloy { display: block; width: 90%; postion: absolute; bottom: 0; } }
-
-/*# sourceMappingURL=freshplate.css.map */
+Backtrace:
+sass/styles/_fpreset.scss:37
+sass/main.scss:5
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"<<<<<<< HEAD\": expected \"{\", was \"}\"\A         on line 37 of sass/styles/_fpreset.scss\A         from line 5 of sass/main.scss\A \A 32: }\A 33: 	// A generic section class to be used for an area that will only show when printerd.\A 34: section.printOnly {\A 35: 	display:none;\A 36: <<<<<<< HEAD\A 37: 	}\A 38: =======\A 39: }\A 40: >>>>>>> 3f1ea2039c4515571def581fe0f7e9105034b4fa"; }
