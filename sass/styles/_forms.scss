@@ -15,6 +15,7 @@ form {
 		color: #999;
 		font-weight: lighter;
 		margin: .5em;
+		padding: .2em .5em;
 		display: block;
 		width:95%;
 
@@ -22,59 +23,16 @@ form {
 	textarea {
 
 	}
-	button {
-		background-color: $btnColor;
-		padding: 15px;
-		margin: .3em;
-		font: bolder 1.6em/1.2 $robot;
-		&:hover {
-		background-color: $btnHover;
-		}
-		&:active {
-			color: $anchorLit;
-			background-color: $btnActive;
-			border: solid 2px $btnBrdrLite;
-		}
-	}
 
-}
-.btnFlat {
-	border: solid 2px $btnBrdrDrk;
-	background-color: inherit;
-	&:active {
-		border:solid 2px $btnBrdrLite;
-	}
-}
-.btn3d {
-	background-color: $btnColor;
-	border-top: solid 10px $btnBrdrLite;
-	border-left: solid 10px $btnBrdrLite;
-	border-bottom: solid 10px $btnBrdrDrk;
-	border-right: solid 10px $btnBrdrDrk;
-	&:active {
-	border-top: solid 10px $btnBrdrDrk;
-	border-left: solid 10px $btnBrdrDrk;
-	border-bottom: solid 10px $btnBrdrLite;
-	border-right: solid 10px $btnBrdrLite;
-	}
+}// end Forms
 
+.field-border-none {
+	border:none;
+	background-color: $btnBrdrLite;
 }
-.btn3d-rnd {
-	background-color: $btnColor;
-	border-top: solid 10px $btnBrdrLite;
-	border-left: solid 10px $btnBrdrLite;
-	border-bottom: solid 10px $btnBrdrDrk;
-	border-right: solid 10px $btnBrdrDrk;
-	border-radius: 50%;
-	&:active {
-	border-top: solid 10px $btnBrdrDrk;
-	border-left: solid 10px $btnBrdrDrk;
-	border-bottom: solid 10px $btnBrdrLite;
-	border-right: solid 10px $btnBrdrLite;
-	}
-
+.field-rnd-crnr {
+	border-radius: .5em;
 }
-
 
 @media screen and (min-width:600px){
 	form {
