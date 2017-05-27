@@ -2,7 +2,7 @@
 
 html {
 	font-size: 10px;
-	line-height: 1.2; /*Set default lin e spacing*/
+	line-height: 1.4; /*Set default lin e spacing*/
 	-ms-text-size-adjust: 100%; /*Font fix for Windows phones when swapping  disply portait v landscape*/
 	-webkit-text-size-adjust: 100%;  /*Font fix for IOS phonds when swapping  disply portait v landscape*/
 }
@@ -15,8 +15,10 @@ article, aside, audio, figcaption, figure, footer, header, nav, section, main, v
 	box-sizing: border-box;
 }
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: #444;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #444;
 }
 
 hr {
