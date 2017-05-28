@@ -4,10 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Yesteryear');
 
-.clrfloat {
-	clear:both;
-	height:0;
-}
+/* General TAG Formats */
 p {
     font-size: 1.6rem;
     line-height: 1.5;
@@ -51,33 +48,18 @@ a:hover {
 a:active {
     color:$anchorActv;
 }
+
+
+// Font classes
 .casualHead {
     font-family: $robot;
 }
 .fineHead {
     font-family: $yesterYr;
 }
-
-
 .fineHead h1 {
     font-size: 4.5rem;
     margin-left: 5px;
 }
-.reverseTransparent {
-    color: rgba(255,255,255,.9);
-    background-color: rgba(0,0,0,.4);
-    text-align: center;
-    vertical-align: middle;
-    padding: 50px;
-    border: 1px solid rgba(255,255,255,.9);
-    width: 75%;
-    height: auto;
-    margin: 0 auto;
-    position: absolute;
-    top: 25px;
-    left: 12.5%;
-}
-.reverseTransparent p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
-}
+
+

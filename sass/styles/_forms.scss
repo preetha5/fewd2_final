@@ -11,7 +11,7 @@ form {
 	}
 
 	input, textarea {
-		font:italic 1.6em $robot;
+		font:italic 1.4rem/2.5 $robot;
 		color: #999;
 		font-weight: lighter;
 		margin: .5em;
@@ -20,23 +20,23 @@ form {
 		width:95%;
 
 	}
-	textarea {
 
-	}
-
-}// end Forms
+}/*end Froms */
 
 .field-border-none {
 	border:none;
 	background-color: $btnBrdrLite;
 }
+
 .field-rnd-crnr {
 	border-radius: .5em;
 }
 
 @media screen and (min-width:600px){
-	form {
 
+}
+@media screen and (min-width:600px) {
+	form {
 		margin: 1%;
 		label {
 			display: inline-block;
