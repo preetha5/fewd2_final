@@ -1,3 +1,6 @@
+/*Anchor colors*/
+/* Button Colors */
+/* Field Colors */
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Roboto:700,700i,900,900i");
@@ -219,8 +222,7 @@ a:active {
     width: 16.66%; }
 
   .col-ml-3 {
-    width: 25%;
-    height: auto; }
+    width: 25%; }
 
   .col-ml-4 {
     width: 33.33%; }
@@ -322,6 +324,188 @@ a:active {
 
   .col-lg-12 {
     width: 100%; } }
+
+/*********NAVIGATION STYLES*************/
+/* Responsive hamberger menu **/
+.responsive_nav_icon {
+  cursor: pointer;
+  display: inline-block;
+  margin: 1em 0 1em 1em; }
+  .responsive_nav_icon:after {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    content: '\e5d2';
+    font-size: 2em;
+    padding: 3px 6px;
+    background-color: #ccc;
+    color: #464655;
+    border: solid 1px #464655;
+    border-radius: 4px; }
+
+.responsive_nav {
+  background-color: #464655;
+  font-family: sans-serif;
+  height: 0;
+  overflow: hidden;
+  list-style: none; }
+  .responsive_nav li {
+    border-bottom: solid 1px #464655; }
+  .responsive_nav li:last-child {
+    border-bottom: none; }
+  .responsive_nav a {
+    text-align: center;
+    text-decoration: none;
+    color: #ebebd3;
+    display: block;
+    text-transform: uppercase;
+    padding: 2em 4em; }
+    .responsive_nav a:hover, .responsive_nav a:focus {
+      background-color: #e4b363;
+      color: #464655; }
+
+.active_nav {
+  background-color: #e4b363;
+  color: #464655; }
+
+.responsive_nav_show {
+  height: auto; }
+
+/** Side Nav bar collapsible **/
+.side_nav {
+  background-color: #464655;
+  font-family: sans-serif;
+  font-size: 2.5em;
+  list-style: none;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -500px;
+  z-index: 1;
+  padding-top: 6em;
+  width: 50%;
+  transition: 1s; }
+  .side_nav a {
+    text-align: center;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    text-transform: uppercase;
+    padding: 10% 0; }
+    .side_nav a:hover, .side_nav a:focus {
+      color: #ebebd3; }
+
+.side_nav_close:after {
+  display: block;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  color: #ebebd3;
+  content: '\e14c';
+  font-size: 3em;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  padding: 10px;
+  cursor: pointer; }
+
+.showSideNav {
+  display: block;
+  transition: 2s; }
+
+.push_right {
+  margin-left: 2%;
+  transition: margin-left 1s; }
+
+.push_animation {
+  margin-left: 53%; }
+
+/**********Media Queries **************/
+/* Mobile landscape */
+@media screen and (min-width: 600px) and (orientation: landscape) {
+  /** Side Nav bar collapsible **/
+  .side_nav {
+    font-size: 1.5em;
+    padding-top: 2em;
+    width: 40%; }
+    .side_nav a {
+      padding: 5% 0; }
+
+  .side_nav_close:after {
+    font-size: 1em; }
+
+  .push_animation {
+    margin-left: 43%; } }
+/**Tablet view **/
+@media screen and (min-width: 768px) {
+  .responsive_nav_icon {
+    display: none; }
+
+  .responsive_nav {
+    height: auto;
+    overflow: visible;
+    background-color: transparent;
+    text-align: center; }
+    .responsive_nav li {
+      display: inline-block;
+      border-bottom: none; }
+    .responsive_nav a {
+      color: #464655;
+      padding: 1em;
+      margin: auto 1em; }
+      .responsive_nav a:hover, .responsive_nav a:focus {
+        background-color: transparent;
+        border-bottom: solid 1px #e4b363; }
+
+  .active_nav {
+    background-color: transparent;
+    border-bottom: solid 1px #e4b363; }
+
+  /** Fixed header **/
+  .top_fixed_nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fafbf5; }
+
+  .bottom_fixed_nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fafbf5; }
+
+  /** Side Nav bar collapsible **/
+  .side_nav {
+    font-size: 2em;
+    padding-top: 4em;
+    width: 35%; }
+    .side_nav a {
+      padding: 8% 0; }
+
+  .side_nav_close:after {
+    font-size: 2em; }
+
+  .push_animation {
+    margin-left: 38%; } }
+/**Large Screen **/
+@media screen and (min-width: 1200px) {
+  /** Side Nav bar collapsible **/ }
+/* CSS_JS COMPONENT - GALLERY 1- The CAROUSEL */
+.carousel {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px #000;
+  overflow: hidden; }
+  .carousel ul {
+    width: 2100px;
+    height: 300px; }
+  .carousel li {
+    list-style-type: none;
+    float: left;
+    width: 300px;
+    height: 300px; }
+
 
 form {
   padding: 0 .5em; }
@@ -457,7 +641,7 @@ form {
   section.printOnloy {
     display: block;
     width: 90%;
-    postion: absolute;
+    position: absolute;
     bottom: 0; } }
 
 /*# sourceMappingURL=freshplate.css.map */
