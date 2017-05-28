@@ -104,6 +104,10 @@ a:active {
 .clearFix {
   clear: both; }
 
+.ContCntr {
+  margin: 0 auto;
+  float: none; }
+
 .bold {
   font-weight: 700; }
 
@@ -475,10 +479,13 @@ form {
 .field-rnd-crnr {
   border-radius: .5em; }
 
+<<<<<<< HEAD
 .field-theme-night {
   color: #eee;
   background-color: #464655; }
 
+=======
+>>>>>>> master
 @media screen and (min-width: 768px) {
   form {
     margin: 1%; }
