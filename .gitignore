@@ -1,0 +1,4 @@
+## Ignore Local files 
+*.html
+images/**/
+.sass-cache/**/
