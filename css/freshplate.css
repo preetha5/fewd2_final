@@ -15,7 +15,7 @@ html {
   /*Font fix for IOS phonds when swapping  disply portait v landscape*/ }
 
 /*IE 9 Display type fix */
-article, aside, audio, figcaption, figure, footer, header, nav, section, main, video, ul, ol, div, section {
+article, aside, audio, blockquote, figcaption, figure, footer, h1, h2, h3, h4, h5, h6, header, nav, p, section, main, video, ul, ol, div, section {
   display: block;
   padding: 0;
   margin: 0;
@@ -42,32 +42,65 @@ section.printOnly {
 
 /* General TAG Formats */
 p {
-  font-size: 1.6rem;
-  line-height: 1.5; }
+  padding: 8px 0; }
 
 hr {
   margin: 25px 0; }
 
 h1 {
-  font-size: 4.2rem; }
+  font-size: 4.2rem;
+  padding: 5px 0; }
 
 h2 {
-  font-size: 3.6rem; }
+  font-size: 3.6rem;
+  padding: 5px 0; }
 
 h3 {
-  font-size: 3.0rem; }
+  font-size: 3.0rem;
+  padding: 5px 0; }
 
 h4 {
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+  padding: 5px 0; }
 
 h5 {
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  padding: 5px 0; }
 
 h6 {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  padding: 5px 0; }
 
 ul {
   list-style-type: none; }
+
+abbr {
+  font-size: inherit;
+  text-decoration: none; }
+
+address {
+  font-size: inherit;
+  font-style: normal; }
+
+blockquote {
+  font-style: italic;
+  font-weight: 700;
+  padding: 5px 5%;
+  border-left: 3px solid rgba(0, 0, 0, 0.4); }
+
+cite, i, var {
+  font-size: inherit;
+  font-style: italic; }
+
+code {
+  font-family: monospace;
+  font-size: inherit;
+  font-style: normal; }
+
+em {
+  font-size: inherit;
+  font-style: normal;
+  font-weight: 700; }
 
 a {
   color: #D2691E;
@@ -82,15 +115,26 @@ a:hover {
 a:active {
   color: #32CD32; }
 
+.bold {
+  font-weight: 700; }
+
+.capitalize {
+  text-transform: capitalize; }
+
 .casualHead {
   font-family: "Roboto", sans-serif; }
 
 .fineHead {
   font-family: "Yesteryear", serif; }
+  .fineHead h1 {
+    font-size: 4.5rem;
+    padding: 5px 0; }
 
-.fineHead h1 {
-  font-size: 4.5rem;
-  margin-left: 5px; }
+.italic {
+  font-style: italic; }
+
+.lowercase {
+  text-transform: lowercase; }
 
 /* Helper classes for the framework */
 /*Float classes*/
@@ -137,10 +181,21 @@ a:active {
   position: absolute;
   top: 25px;
   left: 12.5%; }
+  .reverseTransparent p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem; }
 
-.reverseTransparent p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem; }
+.uppercase {
+  text-transform: uppercase; }
+
+.tx-cntr {
+  text-align: center; }
+
+.tx-left {
+  text-align: left; }
+
+.tx-r {
+  text-align: right; }
 
 /* GRID SYSTEM */
 /* 960px wide grid - 12 column grid solution */
@@ -269,6 +324,7 @@ a:active {
 
   .col-lg-12 {
     width: 100%; } }
+
 /*********NAVIGATION STYLES*************/
 /* Responsive hamberger menu **/
 .responsive_nav_icon {
@@ -450,6 +506,7 @@ a:active {
     width: 300px;
     height: 300px; }
 
+
 form {
   padding: 0 .5em; }
   form label {
@@ -556,6 +613,7 @@ form {
       width: 50%; }
     form button {
       padding: 15px 10px; } }
+
 @media print {
   header[role="banner"], footer, nav {
     display: none; }
