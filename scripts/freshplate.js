@@ -16,6 +16,9 @@ $(document).ready(function(){
     //Toggle responsive navigation menu on click
     $('.responsive_nav_icon').click(hb_toggle_menu);
     
+    //Open/Close side nav menu on click
+    $('.side_nav_btn').click(side_nav_open);
+    $('.side_nav_close').click(side_nav_close);
 }); 
 
 /* Function to start-stop Carousel */
@@ -39,4 +42,18 @@ function stopCarousel(){
 /* Function to toggle hamburger menu on mobile views */
 function hb_toggle_menu(){
     $('.responsive_nav').toggleClass('responsive_nav_show');
+}
+
+/*Function to open side Nav*/
+function side_nav_open(){
+//    $('.side_nav').addClass('showSideNav');
+    $(".side_nav").animate({left:'0'},10);
+    $('.push_right').addClass('push_animation');
+    
+}
+
+function side_nav_close(){
+    //$('.side_nav').removeClass('showSideNav push_right');
+    $(".side_nav").animate({left:'-500px'},10);
+    $('.push_right').removeClass('push_animation');
 }
