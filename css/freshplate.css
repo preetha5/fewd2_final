@@ -167,6 +167,56 @@ section.printOnly {
 
   .col-lg-12 {
     width: 100%; } }
+/* Helper classes for the framework */
+/*Float classes*/
+.onLeft {
+  float: left; }
+
+.onRight {
+  float: right; }
+
+/* Utility Classes */
+.clearFix {
+  clear: both; }
+
+.bold {
+  font-weight: 700; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+/*  alignment styles and more  */
+.tx-cntr {
+  text-align: center; }
+
+.tx-left {
+  text-align: left; }
+
+.tx-r {
+  text-align: right; }
+
+/* Specialty Presentation styles */
+.reverseTransparent {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  vertical-align: middle;
+  padding: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  position: absolute;
+  top: 25px;
+  left: 12.5%; }
+
+.reverseTransparent p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem; }
+
 /* General TAG Formats */
 p {
   padding: 8px 0; }
@@ -291,56 +341,6 @@ a:active {
 
 .tx-r {
   text-align: right; }
-
-/* Helper classes for the framework */
-/*Float classes*/
-.onLeft {
-  float: left; }
-
-.onRight {
-  float: right; }
-
-/* Utility Classes */
-.clearFix {
-  clear: both; }
-
-.bold {
-  font-weight: 700; }
-
-.capitalize {
-  text-transform: capitalize; }
-
-.uppercase {
-  text-transform: uppercase; }
-
-/*  alignment styles and more  */
-.tx-cntr {
-  text-align: center; }
-
-.tx-left {
-  text-align: left; }
-
-.tx-r {
-  text-align: right; }
-
-/* Specialty Presentation styles */
-.reverseTransparent {
-  color: rgba(255, 255, 255, 0.9);
-  background-color: rgba(0, 0, 0, 0.4);
-  text-align: center;
-  vertical-align: middle;
-  padding: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  width: 75%;
-  height: auto;
-  margin: 0 auto;
-  position: absolute;
-  top: 25px;
-  left: 12.5%; }
-
-.reverseTransparent p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem; }
 
 /*********NAVIGATION STYLES*************/
 /* Responsive hamberger menu **/
@@ -507,22 +507,6 @@ a:active {
 /**Large Screen **/
 @media screen and (min-width: 1200px) {
   /** Side Nav bar collapsible **/ }
-/* CSS_JS COMPONENT - GALLERY 1- The CAROUSEL */
-.carousel {
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-  box-shadow: 0 0 15px #000;
-  overflow: hidden; }
-  .carousel ul {
-    width: 2100px;
-    height: 300px; }
-  .carousel li {
-    list-style-type: none;
-    float: left;
-    width: 300px;
-    height: 300px; }
-
 form {
   padding: 0 .5em; }
   form label {
@@ -632,6 +616,22 @@ button {
     border-left: solid 5px #999;
     border-bottom: solid 5px #eee;
     border-right: solid 5px #eee; }
+
+/* CSS_JS COMPONENT - GALLERY 1- The CAROUSEL */
+.carousel {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px #000;
+  overflow: hidden; }
+  .carousel ul {
+    width: 2100px;
+    height: 300px; }
+  .carousel li {
+    list-style-type: none;
+    float: left;
+    width: 300px;
+    height: 300px; }
 
 @media print {
   header[role="banner"], footer, nav {
