@@ -300,6 +300,12 @@ section.printOnly {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem; }
 
+.centerSection:before {
+  clear: both; }
+
+.centerSection {
+  margin: 0 auto; }
+
 /* General TAG Formats */
 p {
   padding: 8px 0; }
