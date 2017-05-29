@@ -5,8 +5,8 @@ form {
 	label {
 		display:none;
 		font: normal 1.6em/1.3 $robot;
-		margin:.5em;
-		padding: .1em;
+		margin:.5em .2em;
+		padding: .2em;
 		vertical-align: center;
 	}
 
@@ -14,107 +14,28 @@ form {
 		font:italic 1.4rem/2.5 $robot;
 		color: #999;
 		font-weight: lighter;
-		margin: .5em;
-		padding: .1em .5em;;
+		margin:.5em .2em;
+		padding: .5em;
 		display: block;
-		width:95%;
-
 	}
 
-	button {
-		background-color: $btnColor;
-		padding: 15px;
-		margin: .3em;
-		font: bolder 1.6em/1.2 $robot;
-		&:hover {
-		background-color: $btnHover;
-		}
-		&:active {
-			color: $anchorLit;
-			background-color: $btnActive;
-			border: solid 2px $btnBrdrLite;
-		}
-	}
-}
-/*Input field styles */
+}/*end Froms */
+
 .field-border-none {
 	border:none;
 	background-color: $btnBrdrLite;
 }
 
 .field-rnd-crnr {
-	border: solid 1px $btnBrdrDrk;
-	border-radius: .5rem;
+	border-radius: .5em;
 }
+
 .field-theme-night {
-	background-color: $btnActive;
-	color: $btnBrdrLite;
-	border: solid 1px $btnColor;
+	color:$anchorLit;
+	background-color: $navDark;
 }
 
-/* Button Styles */
-.btnFlat {
-	border: solid 2px $btnBrdrDrk;
-	background-color: inherit;
-	&:active {
-		border:solid 2px $btnBrdrLite;
-	}
-}
-.btnFlat-rnd-crnr {
-	border: solid 2px $btnBrdrDrk;
-	border-radius: .5em;
-	background-color: inherit;
-	&:active {
-		border:solid 2px $btnBrdrLite;
-	}
-}
-.btn3d {
-	background-color: $btnColor;
-	border-top: solid 10px $btnBrdrLite;
-	border-left: solid 10px $btnBrdrLite;
-	border-bottom: solid 10px $btnBrdrDrk;
-	border-right: solid 10px $btnBrdrDrk;
-	&:active {
-	border-top: solid 10px $btnBrdrDrk;
-	border-left: solid 10px $btnBrdrDrk;
-	border-bottom: solid 10px $btnBrdrLite;
-	border-right: solid 10px $btnBrdrLite;
-	}
-
-}
-.btn3d-rnd {
-	background-color: $btnColor;
-	border-top: solid 10px $btnBrdrLite;
-	border-left: solid 10px $btnBrdrLite;
-	border-bottom: solid 10px $btnBrdrDrk;
-	border-right: solid 10px $btnBrdrDrk;
-	border-radius: 50%;
-	&:active {
-	border-top: solid 10px $btnBrdrDrk;
-	border-left: solid 10px $btnBrdrDrk;
-	border-bottom: solid 10px $btnBrdrLite;
-	border-right: solid 10px $btnBrdrLite;
-	}
-}
-.btn3d-rnd-crnr {
-	background-color: $btnColor;
-	border-top: solid 5px $btnBrdrLite;
-	border-left: solid 5px $btnBrdrLite;
-	border-bottom: solid 5px $btnBrdrDrk;
-	border-right: solid 5px $btnBrdrDrk;
-	border-radius: .5em;
-	&:active {
-	border-top: solid 5px $btnBrdrDrk;
-	border-left: solid 5px $btnBrdrDrk;
-	border-bottom: solid 5px $btnBrdrLite;
-	border-right: solid 5px $btnBrdrLite;
-	}
-
-}
-
-
-
-@media screen and (min-width:600px) {
+@media screen and (min-width:768px) {
 	form {
 		margin: 1%;
 		label {
@@ -125,8 +46,8 @@ form {
 			display: inline-block;
 			}
 		textarea {
-			display: block;
-			width: 50%;
+			display: inline-block;
+
 			}
 		button  {
 			padding: 15px 10px;

@@ -325,6 +325,7 @@ a:active {
   .col-lg-12 {
     width: 100%; } }
 
+
 /*********NAVIGATION STYLES*************/
 /* Responsive hamberger menu **/
 .responsive_nav_icon {
@@ -512,44 +513,56 @@ form {
   form label {
     display: none;
     font: normal 1.6em/1.3 "Roboto", sans-serif;
-    margin: .5em;
-    padding: .1em;
+    margin: .5em .2em;
+    padding: .2em;
     vertical-align: center; }
   form input, form textarea {
     font: italic 1.4rem/2.5 "Roboto", sans-serif;
     color: #999;
     font-weight: lighter;
-    margin: .5em;
-    padding: .1em .5em;
-    display: block;
-    width: 95%; }
-  form button {
-    background-color: #bbb;
-    padding: 15px;
-    margin: .3em;
-    font: bolder 1.6em/1.2 "Roboto", sans-serif; }
-    form button:hover {
-      background-color: #ddd; }
-    form button:active {
-      color: #eee;
-      background-color: #000;
-      border: solid 2px #eee; }
+    margin: .5em .2em;
+    padding: .5em;
+    display: block; }
 
-/*Input field styles */
+/*end Froms */
 .field-border-none {
   border: none;
   background-color: #eee; }
 
 .field-rnd-crnr {
-  border: solid 1px #999;
-  border-radius: .5rem; }
+  border-radius: .5em; }
 
 .field-theme-night {
-  background-color: #000;
   color: #eee;
-  border: solid 1px #bbb; }
+  background-color: #464655; }
 
-/* Button Styles */
+@media screen and (min-width: 768px) {
+  form {
+    margin: 1%; }
+    form label {
+      display: inline-block; }
+    form input {
+      display: inline-block; }
+    form textarea {
+      display: inline-block; }
+    form button {
+      padding: 15px 10px; } }
+/* Button styles for use globally */
+button {
+  display: inline-block;
+  padding: 15px;
+  margin: .3em;
+  font: bolder 1.6em/1.2 "Roboto", sans-serif; }
+  button:hover {
+    background-color: #ddd; }
+  button:active {
+    color: #eee;
+    background-color: #000;
+    border: solid 2px #eee; }
+
+.btnStd {
+  background-color: #bbb; }
+
 .btnFlat {
   border: solid 2px #999;
   background-color: inherit; }
@@ -600,19 +613,6 @@ form {
     border-left: solid 5px #999;
     border-bottom: solid 5px #eee;
     border-right: solid 5px #eee; }
-
-@media screen and (min-width: 600px) {
-  form {
-    margin: 1%; }
-    form label {
-      display: inline-block; }
-    form input {
-      display: inline-block; }
-    form textarea {
-      display: block;
-      width: 50%; }
-    form button {
-      padding: 15px 10px; } }
 
 @media print {
   header[role="banner"], footer, nav {

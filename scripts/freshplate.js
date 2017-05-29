@@ -49,7 +49,7 @@ function side_nav_open(){
 //    $('.side_nav').addClass('showSideNav');
     $(".side_nav").animate({left:'0'},10);
     $('.push_right').addClass('push_animation');
-    
+
 }
 
 function side_nav_close(){
