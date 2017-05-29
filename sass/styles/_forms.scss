@@ -4,9 +4,9 @@ form {
 	padding: 0 .5em;
 	label {
 		display:none;
-		font: normal 1.6em/1.3 $robot;
+		font: normal 1.2em/1.3 $robot;
 		margin:.5em .2em;
-		padding: .2em;
+		padding: .4em;
 		vertical-align: center;
 	}
 
@@ -35,6 +35,10 @@ form {
 	background-color: $navDark;
 }
 
+.field-theme-gray {
+	color: $btnBrdrLite;
+	background-color: $btnBrdrDrk;
+}
 @media screen and (min-width:768px) {
 	form {
 		margin: 1%;
