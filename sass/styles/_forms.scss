@@ -1,0 +1,56 @@
+// Form Styles
+
+form {
+	padding: 0 .5em;
+	label {
+		display:none;
+		font: normal 1.6em/1.3 $robot;
+		margin:.5em .2em;
+		padding: .2em;
+		vertical-align: center;
+	}
+
+	input, textarea {
+		font:italic 1.4rem/2.5 $robot;
+		color: #999;
+		font-weight: lighter;
+		margin:.5em .2em;
+		padding: .5em;
+		display: block;
+	}
+
+}/*end Froms */
+
+.field-border-none {
+	border:none;
+	background-color: $btnBrdrLite;
+}
+
+.field-rnd-crnr {
+	border-radius: .5em;
+}
+
+.field-theme-night {
+	color:$anchorLit;
+	background-color: $navDark;
+}
+
+@media screen and (min-width:768px) {
+	form {
+		margin: 1%;
+		label {
+			display: inline-block;
+
+			}
+		input {
+			display: inline-block;
+			}
+		textarea {
+			display: inline-block;
+
+			}
+		button  {
+			padding: 15px 10px;
+		}
+	}
+}
