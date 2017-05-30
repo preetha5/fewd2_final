@@ -90,16 +90,8 @@ a:active {
     color:$anchorActv;
 }
 
-//Font classes
 
-.bold {
-  font-weight: 700;
-}
-
-.capitalize {
-  text-transform: capitalize;
-}
-
+// Font classes
 .casualHead {
     font-family: $robot;
 }
@@ -109,9 +101,6 @@ a:active {
     font-size: 4.5rem;
     padding: 5px 0;
   }
-}
-.italic {
-  font-style: italic;
 }
 
 .lowercase {
@@ -126,10 +115,4 @@ a:active {
   text-align: center;
 }
 
-.tx-left {
-  text-align: left;
-}
 
-.tx-r {
-  text-align: right;
-}
