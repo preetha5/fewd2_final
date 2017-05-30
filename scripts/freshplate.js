@@ -8,7 +8,7 @@
     var interval;
 
 $(document).ready(function(){
-     var $carousel = $('.auto_slideshow'); 
+     var $carousel = $('.auto_slideshow');
     //Have carousel started on page load
     startSlideShow();
     $carousel.on('mouseenter',stopSlideShow).on('mouseleave', startSlideShow);
@@ -17,33 +17,33 @@ $(document).ready(function(){
     //Open/Close side nav menu on click
     $('.side_nav_btn').click(side_nav_open);
     $('.side_nav_close').click(side_nav_close);
-    
+
     //BEGIN: Code for the thumbnail slider gallery
     var lgImgCont = $('.slider').css('overflow','hidden').children('ul');
     var thumImgCont = $('.thumb_gallery').children('ul');
-    
+
     //Create new slider object
     var sliderObj = new slider(lgImgCont, thumImgCont, $('.sliderCtrls') );
-    
+
     //Set up click functions for slider control buttons
-    sliderObj.nav.find('button').on('click',function(){                   
+    sliderObj.nav.find('button').on('click',function(){
         sliderObj.setCurrentPos($(this).data('dir'));
         sliderObj.transition();
 				});
-    
+
     //Set up click function for thumbnail images
 
     sliderObj.thumImgCont.find('li a').on('click', function(evt){
         evt.preventDefault();
         sliderObj.setCurrentPos($(this).data('pgno'));
         sliderObj.transition();
-    });   
+    });
 
     //END: Code for the thumbnail slider gallery
 
     }); //END Doc ready
-    
-    
+
+
 
 /* Function to start-stop SlideShow */
 function startSlideShow(){
@@ -73,7 +73,7 @@ function side_nav_open(){
 //    $('.side_nav').addClass('showSideNav');
     $(".side_nav").animate({left:'0'},10);
     $('.push_right').addClass('push_animation');
-    
+
 }
 
 function side_nav_close(){
@@ -96,10 +96,10 @@ function slider(lgImgCont, thumImgCont, nav){
     //add the "data-pgno" attribute to the Thumbnail Container
     item=0;
     this.thumbList = thumImgCont.find('li');
-    
+
     //loop thr each list iem and add pgno data attribute
     this.thumbList.each(function(){
-        $anchor = $(this).find('a');        
+        $anchor = $(this).find('a');
         $anchor.data('pgno',item);
         item++;
     });
@@ -121,11 +121,11 @@ slider.prototype.transition = function(coords){
 //Set the current counter to prev or next position based on data-dir property
 slider.prototype.setCurrentPos = function(dir){
     var pos = this.current;
-    
+
     if(isNaN(dir)){
         pos+= Math.floor(dir=='next') || -1;
        // pos+= ~~(dir=='next') || -1;
-        
+
         this.current = (pos<0)?this.numImgs-1:pos%(this.numImgs);
     }
     else
@@ -133,5 +133,5 @@ slider.prototype.setCurrentPos = function(dir){
         this.current = Number(dir);
         }
     console.log("this.current is " +this.current);
-    
+
 };
