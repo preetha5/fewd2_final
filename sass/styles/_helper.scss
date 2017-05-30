@@ -59,6 +59,15 @@
     }
 }
 
+
+.centerSection:before {
+  clear: both;
+}
+
+.centerSection {
+  margin: 0 auto;
+}
+
 /*Responsive Image */
     .responsiveImg{max-width:100%;height:auto;}
 
