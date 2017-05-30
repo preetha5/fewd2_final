@@ -90,16 +90,8 @@ a:active {
     color:$anchorActv;
 }
 
-//Font classes
 
-.bold {
-  font-weight: 700;
-}
-
-.capitalize {
-  text-transform: capitalize;
-}
-
+// Font classes
 .casualHead {
     font-family: $robot;
 }
@@ -110,43 +102,5 @@ a:active {
     padding: 5px 0;
   }
 }
-.italic {
-  font-style: italic;
-}
 
-.lowercase {
-  text-transform: lowercase;
-}
-.reverseTransparent {
-    color: rgba(255,255,255,.9);
-    background-color: rgba(0,0,0,.4);
-    text-align: center;
-    vertical-align: middle;
-    padding: 50px;
-    border: 1px solid rgba(255,255,255,.9);
-    width: 75%;
-    height: auto;
-    margin: 0 auto;
-    position: absolute;
-    top: 25px;
-    left: 12.5%;
-    p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
-  }
-}
-.uppercase {
-  text-transform: uppercase;
-}
 
-.tx-cntr {
-  text-align: center;
-}
-
-.tx-left {
-  text-align: left;
-}
-
-.tx-r {
-  text-align: right;
-}

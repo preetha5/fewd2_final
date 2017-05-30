@@ -12,7 +12,10 @@
     clear: both;
 }
 
-// Special Styles
+// Special Text-String Styles
+.italic {
+  font-style: italic;
+}
 .bold {
     font-weight: 700;
 }
@@ -21,6 +24,9 @@
 }
 .uppercase {
     text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
 }
 /*  alignment styles and more  */
 .tx-cntr {
@@ -47,8 +53,11 @@
     position: absolute;
     top: 25px;
     left: 12.5%;
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+    }
 }
-.reverseTransparent p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
-}
+
+/*Responsive Image */
+    .responsiveImg{max-width:100%;height:auto;}
