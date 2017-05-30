@@ -295,10 +295,9 @@ section.printOnly {
   position: absolute;
   top: 25px;
   left: 12.5%; }
-
-.reverseTransparent p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem; }
+  .reverseTransparent p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem; }
 
 .centerSection:before {
   clear: both; }
@@ -401,23 +400,6 @@ a:active {
 
 .lowercase {
   text-transform: lowercase; }
-
-.reverseTransparent {
-  color: rgba(255, 255, 255, 0.9);
-  background-color: rgba(0, 0, 0, 0.4);
-  text-align: center;
-  vertical-align: middle;
-  padding: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  width: 75%;
-  height: auto;
-  margin: 0 auto;
-  position: absolute;
-  top: 25px;
-  left: 12.5%; }
-  .reverseTransparent p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem; }
 
 .uppercase {
   text-transform: uppercase; }
