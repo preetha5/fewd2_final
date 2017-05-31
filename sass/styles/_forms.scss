@@ -4,24 +4,41 @@
 
 form {
 	padding: 0 .5em;
+    max-width: 960px;
+    margin: 0 auto;
 	label {
 		display: none;
 		font: normal 1.2em/1.3 $robot;
 		margin:.5em .2em;
 		padding: .4em;
-		vertical-align: center;
+		vertical-align: top;
+        width: 20%;
+        text-align: right;
 	}
 
 	input, textarea {
 		font:italic 1.4rem/2.5 $robot;
 		color: #999;
 		font-weight: lighter;
-		margin:.5em .2em;
 		padding: .5em;
 		display: block;
+        margin: 1em auto;
+        width: 80%;
+        border: solid 1px #999;
 	}
+    fieldset{
+    padding: 1em;
+    margin: 1em 0;
+    border: solid 1px #999; 
+    }
 
-}/*end Froms */
+    legend{
+        padding: 0 5px;
+        font-style: italic;
+        color: #444;
+    }
+
+}/*end Form */
 
 .field-border-none {
 	border:none;
@@ -42,18 +59,21 @@ form {
 	background-color: $btnBrdrDrk;
 }
 @media screen and (min-width:768px) {
+    
 	form {
 		margin: 1%;
 		label {
 			display: inline-block;
-
 			}
-		input {
+		input{
 			display: inline-block;
+            margin:.5em .2em;
+            width: 60%;
 			}
-		textarea {
+        textarea{
 			display: inline-block;
-
+            margin:.5em .2em;
+            width: 60%;
 			}
 		button  {
 			padding: 15px 10px;
