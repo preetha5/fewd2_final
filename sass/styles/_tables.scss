@@ -49,9 +49,9 @@ thead {
 }
 
 
-/* Tablet */
+/* mobile landscape */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (orientation: landscape) {
     table,
     th,
     tr,
@@ -64,7 +64,7 @@ thead {
 
 /* Medium */
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
     table,
     th,
     tr,
