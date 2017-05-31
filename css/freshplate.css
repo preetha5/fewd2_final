@@ -267,9 +267,6 @@ section.printOnly {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem; }
 
-.centerSection:before {
-  clear: both; }
-
 .centerSection {
   margin: 0 auto; }
 
@@ -518,8 +515,6 @@ a:active {
 /**Large Screen **/
 @media screen and (min-width: 1200px) {
   /** Side Nav bar collapsible **/ }
-/* Requirwres JQuery Mobile Insert linkl at the top of the page 
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> */
 form {
   padding: 0 .5em; }
   form label {
@@ -657,7 +652,7 @@ button {
   font: bolder 2.4em "Roboto", sans-serif;
   margin: .5em;
   padding: .25rem;
-  width: 50%;
+  width: 48vw;
   height: 7rem; }
 
 /* GALLERY 1- The AUTO-SLIDESHOW */
