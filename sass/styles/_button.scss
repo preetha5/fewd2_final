@@ -4,7 +4,7 @@ button {
 	display:inline-block;
 	padding: 15px;
 	margin: .3em;
-	font: bolder 1.6em/1.2 $robot;
+	font: bolder 1.2em/1.2 $robot;
 	&:hover {
 	background-color: $btnHover;
 	}
@@ -14,6 +14,7 @@ button {
 		border: solid 2px $btnBrdrLite;
 	}
 }
+/*Button Styles */
 .btnStd {
 			background-color: $btnColor;
 	}
@@ -79,3 +80,37 @@ button {
 	border-right: solid 5px $btnBrdrLite;
 	}
 }
+
+/* Button Sizes */
+
+.btnTinySq {
+	font:bolder .75em $robot;
+	margin:.2rem;
+	padding: 2px;
+	width: 6rem;
+	height: 6rem;
+}
+
+.btnMed {
+	font:bolder 1em $robot;
+	margin:.2rem;
+	padding: 2px;
+	width:12rem;
+	height: 4rem;
+}
+
+.btnLrg {
+	font:bolder 1.6em $robot;
+	margin:.2rem;
+	padding: 2px;
+	width:16rem;
+	height: 5rem;
+}
+.btnHuge {
+	font: bolder 2.4em $robot;
+	margin:.5em;
+	padding:.25rem;
+	width: 48vw;
+	height: 7rem;
+}
+

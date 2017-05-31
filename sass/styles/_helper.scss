@@ -12,6 +12,18 @@
     clear: both;
 }
 
+// Font classes
+.casualHead {
+    font-family: $robot;
+}
+.fineHead {
+    font-family: $yesterYr;
+    h1 {
+    font-size: 4.5rem;
+    padding: 5px 0;
+  }
+}
+
 // Special Text-String Styles
 .italic {
   font-style: italic;
@@ -35,7 +47,7 @@
 .tx-left {
     text-align: left;
 }
-.tx-r {
+.tx-right {
     text-align: right;
 }
 
@@ -59,5 +71,10 @@
     }
 }
 
+.centerSection {
+  margin: 0 auto;
+}
+
 /*Responsive Image */
     .responsiveImg{max-width:100%;height:auto;}
+
