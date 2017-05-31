@@ -1,0 +1,89 @@
+.table,
+table {
+    font-size: .5em;
+    padding: .5em 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: $fieldValid;
+}
+
+.border {
+    border: 1px solid #ccc;
+}
+
+.striped-even tr:nth-child(even) {
+    background-color: $navFixedBg;
+}
+
+.striped-odd tr:nth-child(odd) {
+    background-color: $navFixedBg;
+}
+
+.hover tr:hover {
+    background-color: $navHov;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+
+/*******Media Queries ********/
+
+
+/* Mobile */
+
+@media screen and (min-width: 400px) {
+    .table,
+    table,
+    th,
+    tr,
+    td {
+        font-size: .95em;
+        padding: .7em;
+    }
+}
+
+
+/* Tablet */
+
+@media screen and (min-width: 600px) {
+    .table,
+    table,
+    th,
+    tr,
+    td {
+        font-size: 1em;
+        padding: .9em;
+        max-width: 80%;
+    }
+}
+
+
+/* Medium */
+
+@media screen and (min-width: 720px) {
+    .table,
+    table,
+    th,
+    tr,
+    td {
+        padding: 1em;
+    }
+}
+
+
+/* Large */
+
+@media screen and (min-width: 1200px) {
+    .table,
+    table,
+    th,
+    tr,
+    td {
+        padding: 1.5em;
+    }
+}

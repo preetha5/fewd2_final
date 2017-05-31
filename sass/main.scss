@@ -1,9 +1,7 @@
 // Main SCSS Reporitory
-
 @import 'variables/variables'; // Colors and other variables
 @import 'variables/mixins'; //mixins or other shortcuts.
 @import 'styles/fpreset'; //  Must alwasy be infront of all other CSS
-
 @import 'styles/grid';
 @import 'styles/global';
 @import 'styles/helper';
@@ -13,7 +11,6 @@
 @import 'styles/forms';
 @import 'styles/button';
 @import 'styles/parallax';
-
-
+@import 'styles/tables';
 //Printer styles must alawys be the last thing to import
 @import 'styles/printer';
