@@ -1,17 +1,19 @@
-.table,
 table {
     font-size: .5em;
     padding: .5em 0;
     border-collapse: collapse;
     width: 100%;
+    display: block;
+    box-sizing: inherit;
 }
 
-th {
-    background-color: $fieldValid;
+thead {
+    border-bottom: 1px solid #999;
+    font-weight: bold;
 }
 
 .border {
-    border: 1px solid #ccc;
+    border: 1px solid #999;
 }
 
 .striped-even tr:nth-child(even) {
@@ -37,7 +39,6 @@ th {
 /* Mobile */
 
 @media screen and (min-width: 400px) {
-    .table,
     table,
     th,
     tr,
@@ -51,14 +52,12 @@ th {
 /* Tablet */
 
 @media screen and (min-width: 600px) {
-    .table,
     table,
     th,
     tr,
     td {
         font-size: 1em;
         padding: .9em;
-        max-width: 80%;
     }
 }
 
@@ -66,12 +65,12 @@ th {
 /* Medium */
 
 @media screen and (min-width: 720px) {
-    .table,
     table,
     th,
     tr,
     td {
         padding: 1em;
+        max-width: 80%;
     }
 }
 
@@ -79,7 +78,6 @@ th {
 /* Large */
 
 @media screen and (min-width: 1200px) {
-    .table,
     table,
     th,
     tr,
