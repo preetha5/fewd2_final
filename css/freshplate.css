@@ -50,40 +50,40 @@ section.printOnly {
   width: 100%;
   float: left; }
 
-.col-sm-1 {
+.col-mp-1 {
   width: 8.33%; }
 
-.col-sm-2 {
+.col-mp-2 {
   width: 16.66%; }
 
-.col-sm-3 {
+.col-mp-3 {
   width: 25%; }
 
-.col-sm-4 {
+.col-mp-4 {
   width: 33.33%; }
 
-.col-sm-5 {
+.col-mp-5 {
   width: 41.66%; }
 
-.col-sm-6 {
+.col-mp-6 {
   width: 50%; }
 
-.col-sm-7 {
+.col-mp-7 {
   width: 58.33%; }
 
-.col-sm-8 {
+.col-mp-8 {
   width: 66.66%; }
 
-.col-sm-9 {
+.col-mp-9 {
   width: 75%; }
 
-.col-sm-10 {
+.col-mp-10 {
   width: 83.33%; }
 
-.col-sm-11 {
+.col-mp-11 {
   width: 91.66%; }
 
-.col-sm-12 {
+.col-mp-12 {
   width: 100%; }
 
 .row:after {
@@ -215,6 +215,15 @@ section.printOnly {
 .clearFix {
   clear: both; }
 
+.casualHead {
+  font-family: "Roboto", sans-serif; }
+
+.fineHead {
+  font-family: "Yesteryear", serif; }
+  .fineHead h1 {
+    font-size: 4.5rem;
+    padding: 5px 0; }
+
 .italic {
   font-style: italic; }
 
@@ -237,7 +246,7 @@ section.printOnly {
 .tx-left {
   text-align: left; }
 
-.tx-r {
+.tx-right {
   text-align: right; }
 
 /* Specialty Presentation styles */
@@ -343,21 +352,6 @@ a:hover {
 
 a:active {
   color: #32CD32; }
-
-.casualHead {
-  font-family: "Roboto", sans-serif; }
-
-.fineHead {
-  font-family: "Yesteryear", serif; }
-  .fineHead h1 {
-    font-size: 4.5rem;
-    padding: 5px 0; }
-
-.lowercase {
-  text-transform: lowercase; }
-
-.uppercase {
-  text-transform: uppercase; }
 
 /*********NAVIGATION STYLES*************/
 /* Responsive hamberger menu **/
@@ -582,6 +576,7 @@ button {
     background-color: #000;
     border: solid 2px #eee; }
 
+/*Button Styles */
 .btnStd {
   background-color: #bbb; }
 
@@ -635,6 +630,35 @@ button {
     border-left: solid 5px #999;
     border-bottom: solid 5px #eee;
     border-right: solid 5px #eee; }
+
+/* Button Sizes */
+.btnTinySq {
+  font: bolder 0.75em "Roboto", sans-serif;
+  margin: .2rem;
+  padding: 2px;
+  width: 6rem;
+  height: 6rem; }
+
+.btnMed {
+  font: bolder 1em "Roboto", sans-serif;
+  margin: .2rem;
+  padding: 2px;
+  width: 12rem;
+  height: 4rem; }
+
+.btnLrg {
+  font: bolder 1.6em "Roboto", sans-serif;
+  margin: .2rem;
+  padding: 2px;
+  width: 16rem;
+  height: 5rem; }
+
+.btnHuge {
+  font: bolder 2.4em "Roboto", sans-serif;
+  margin: .5em;
+  padding: .25rem;
+  width: 50%;
+  height: 7rem; }
 
 /* GALLERY 1- The AUTO-SLIDESHOW */
 .auto_slideshow {
