@@ -8,42 +8,65 @@
     var interval;
 
 $(document).ready(function(){
-     var $carousel = $('.auto_slideshow');
-    //Have carousel started on page load
-    startSlideShow();
-    $carousel.on('mouseenter',stopSlideShow).on('mouseleave', startSlideShow);
+    
+    //BEGIN : Code for responsive menu toggling
     //Toggle responsive navigation menu on click
     $('.responsive_nav_icon').click(hb_toggle_menu);
     //Open/Close side nav menu on click
     $('.side_nav_btn').click(side_nav_open);
     $('.side_nav_close').click(side_nav_close);
-
+    //END: Responsive menu
+    
+    //BEGIN: Code for auto slideshow
+     var $carousel = $('.auto_slideshow'); 
+    //Have carousel started on page load
+    startSlideShow();
+    $carousel.on('mouseenter',stopSlideShow).on('mouseleave', startSlideShow);
+    //END: Auto Slideshow
+    
+    
     //BEGIN: Code for the thumbnail slider gallery
     var lgImgCont = $('.slider').css('overflow','hidden').children('ul');
     var thumImgCont = $('.thumb_gallery').children('ul');
+    
+    //Create new slider object for thumbnail gallery
+    if($('.slider').length){
+        var sliderObj = new slider(lgImgCont, thumImgCont, $('.sliderCtrls') );
 
-    //Create new slider object
-    var sliderObj = new slider(lgImgCont, thumImgCont, $('.sliderCtrls') );
+        //Set up click functions for slider control buttons
+        sliderObj.nav.find('button').on('click',function(){                   
+            sliderObj.setCurrentPos($(this).data('dir'));
+            sliderObj.transition();
+                    });
 
-    //Set up click functions for slider control buttons
-    sliderObj.nav.find('button').on('click',function(){
-        sliderObj.setCurrentPos($(this).data('dir'));
-        sliderObj.transition();
-				});
-
-    //Set up click function for thumbnail images
-
-    sliderObj.thumImgCont.find('li a').on('click', function(evt){
-        evt.preventDefault();
-        sliderObj.setCurrentPos($(this).data('pgno'));
-        sliderObj.transition();
-    });
-
-    //END: Code for the thumbnail slider gallery
-
-    }); //END Doc ready
-
-
+        //Set up click function for thumbnail images
+        sliderObj.thumImgCont.find('li a').on('click', function(evt){
+            evt.preventDefault();
+            sliderObj.setCurrentPos($(this).data('pgno'));
+            sliderObj.transition();
+        });   
+    } //END: Code for the thumbnail slider gallery
+    
+    //BEGIN: Code for Modal pop-up
+    $('.popUpImg img').click(function(){
+        var imgSrc = $(this).attr('src');
+        var caption = $(this).attr('alt');
+        $('.popUpImg').after('<div class="modal"></div>');
+        $('.modal').css('display', 'block');
+        /* Create subdivs inside modal class */
+        var code = "<div class='modal_close'></div>";
+        code += '<img class="modalImg" src='+imgSrc+' />'
+        code += '<div class="imgCaption">'+caption+'</div>'
+        $('.modal').prepend(code);
+         $('.modal_close').click(function(){
+            $('.modal').css('display', 'none');
+            $('.modal').remove();
+        });
+    }); //END: Code for Modal pop-up
+      
+}); //END Doc ready
+    
+    
 
 /* Function to start-stop SlideShow */
 function startSlideShow(){
@@ -73,7 +96,6 @@ function side_nav_open(){
 //    $('.side_nav').addClass('showSideNav');
     $(".side_nav").animate({left:'0'},10);
     $('.push_right').addClass('push_animation');
-
 }
 
 function side_nav_close(){
