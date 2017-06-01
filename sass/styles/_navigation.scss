@@ -19,19 +19,15 @@
 }
 
 .responsive_nav {
+    display: none;
     background-color: $navDark;
     font-family: sans-serif;
-    height: 0;
-    overflow: hidden;
     list-style: none;
-    li{
-        border-bottom: solid 1px $navDark;
-
-    }
     li:last-child{
         border-bottom: none;
     }
     a{
+        font-size: 2.5rem;
         text-align: center;
         text-decoration: none;
         color:$navLiteYw;
@@ -49,9 +45,13 @@
     background-color: $navActive;
     color: $navDark;
 }
-.responsive_nav_show{
-    height: auto;
-}
+
+/* Dropdown/Submenu styles **/
+.submenu{
+     ul li a{
+        text-transform:capitalize;
+    } 
+    }
 
 /** Side Nav bar collapsible **/
 .side_nav{
@@ -107,6 +107,7 @@
 .push_animation{
     margin-left: 53%;
 }
+
 /**********Media Queries **************/
 /* Mobile landscape */
 @media screen and (min-width: 600px)
@@ -138,15 +139,33 @@ and (orientation : landscape){
  }
 
  .responsive_nav{
-    height: auto;
-    overflow:visible;
+    display: block!important;
     background-color: transparent;
     text-align: center;
      li{
          display: inline-block;
          border-bottom: none;
+         position: relative;
+         li{
+             width: 100%;
+             a{
+                 margin: 0;
+                padding-left: 0;
+                 padding-right: 0;
+                color:$navLiteYw;
+                &:hover,&:focus{
+                    background-color: $navHov;
+                    color: $navDark;
+                }
+             }
+          
+         }
      }
+     li:hover > ul{
+        display: block;
+    }
     a{
+        font-size: 1.6rem;
         color:$navDark;
         padding: 1em;
         margin: auto 1em;
@@ -154,18 +173,37 @@ and (orientation : landscape){
             background-color: transparent;
             border-bottom: solid 1px $navHov;
         }
-    }
-
+        }
+     ul{
+         position: absolute;
+         top: 100%;
+         z-index: 20;
+         background-color: $navDark;
+         }
  }
  .active_nav{
     background-color: transparent;
     border-bottom: solid 1px $navActive;
+    }
+     
+ /** Dropdown menu **/
+ .submenu{
+     a:hover{
+         border-bottom: none;
+         color:$navHov;
+     }
+     ul{
+        display: none; 
+     }
+        
+        
     }
 
  /** Fixed header **/
  .top_fixed_nav{
     position: fixed;
     top:0;
+    left: -1px;
     width:100%;
     background-color: $navFixedBg;
  }
