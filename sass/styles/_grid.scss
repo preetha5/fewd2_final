@@ -7,20 +7,19 @@
 /* For mobile portrait phones all columns will take 100% */
 [class*="col-"] {
     width: 100%;
-	float:left;
 }
-.col-mp-1 {width:8.33%;}
-.col-mp-2 {width: 16.66%;}
-.col-mp-3 {width: 25%;}
-.col-mp-4 {width: 33.33%;}
-.col-mp-5 {width: 41.66%;}
-.col-mp-6 {width: 50%;}
-.col-mp-7 {width: 58.33%;}
-.col-mp-8 {width: 66.66%;}
-.col-mp-9 {width: 75%;}
-.col-mp-10 {width: 83.33%;}
-.col-mp-11 {width: 91.66%;}
-.col-mp-12 {width: 100%;}
+.col-mp-1 {width:8.33%;float:left;}
+.col-mp-2 {width: 16.66%;float:left;}
+.col-mp-3 {width: 25%;float:left;}
+.col-mp-4 {width: 33.33%;float:left;}
+.col-mp-5 {width: 41.66%;float:left;}
+.col-mp-6 {width: 50%;float:left;}
+.col-mp-7 {width: 58.33%;float:left;}
+.col-mp-8 {width: 66.66%;float:left;}
+.col-mp-9 {width: 75%;float:left;}
+.col-mp-10 {width: 83.33%;float:left;}
+.col-mp-11 {width: 91.66%;float:left;}
+.col-mp-12 {width: 100%;float:none;}
 
 .row:after{
     content: "";
@@ -33,6 +32,9 @@
 /* Mobile landscape */
 @media screen and (min-width: 600px)
 and (orientation : landscape){
+[class*="col-"] {
+	float:left;
+}
 .col-ml-1 {width:8.33%;}
 .col-ml-2 {width: 16.66%;}
 .col-ml-3 {width: 25%;}
@@ -44,7 +46,7 @@ and (orientation : landscape){
 .col-ml-9 {width: 75%;}
 .col-ml-10 {width: 83.33%;}
 .col-ml-11 {width: 91.66%;}
-.col-ml-12 {width: 100%;}
+.col-ml-12 {width: 100%;float:none;}
 }
 
 /* Tablet portrait */
@@ -60,7 +62,7 @@ and (orientation : landscape){
 .col-tb-9 {width: 75%;}
 .col-tb-10 {width: 83.33%;}
 .col-tb-11 {width: 91.66%;}
-.col-tb-12 {width: 100%;}
+.col-tb-12 {width: 100%;float:none;}
 
 }
 
@@ -77,6 +79,6 @@ and (orientation : landscape){
 .col-lg-9 {width: 75%;}
 .col-lg-10 {width: 83.33%;}
 .col-lg-11 {width: 91.66%;}
-.col-lg-12 {width: 100%;}
+.col-lg-12 {width: 100%;float:none;}
 
 }
