@@ -10,8 +10,10 @@
 $(document).ready(function(){
     
     //BEGIN : Code for responsive menu toggling
-    //Toggle responsive navigation menu on click
-    $('.responsive_nav_icon').click(hb_toggle_menu);
+    $('.responsive_nav_icon').click(function(){ 
+        $('.responsive_nav').slideToggle("500");
+        });
+     
     //Open/Close side nav menu on click
     $('.side_nav_btn').click(side_nav_open);
     $('.side_nav_close').click(side_nav_close);
@@ -48,22 +50,26 @@ $(document).ready(function(){
     } //END: Code for the thumbnail slider gallery
     
     //BEGIN: Code for Modal pop-up
-    $('.popUpImg img').click(function(){
-        var imgSrc = $(this).attr('src');
-        var caption = $(this).attr('alt');
-        $('.popUpImg').after('<div class="modal"></div>');
-        $('.modal').css('display', 'block');
-        /* Create subdivs inside modal class */
-        var code = "<div class='modal_close'></div>";
-        code += '<img class="modalImg" src='+imgSrc+' />'
-        code += '<div class="imgCaption">'+caption+'</div>'
-        $('.modal').prepend(code);
-         $('.modal_close').click(function(){
-            $('.modal').css('display', 'none');
-            $('.modal').remove();
-        });
-    }); //END: Code for Modal pop-up
-      
+    if($('.popUpImg').length){
+        $('.popUpImg img').each(function() {
+            $(this).click(function(){
+                var imgSrc = $(this).attr('src');
+                var caption = $(this).attr('alt');
+                $(this).parent().after('<div class="modal"></div>');
+                $('.modal').css('display', 'block');
+                /* Create subdivs inside modal class */
+                var code = "<div class='modal_close'></div>";
+                code += '<img class="modalImg" src='+imgSrc+' />';
+                code += '<div class="imgCaption">'+caption+'</div>';
+                $('.modal').prepend(code);
+                 $('.modal_close').click(function(){
+                    $('.modal').css('display', 'none');
+                    $('.modal').remove();
+                });
+            }); //End popup click event
+        });//END: Each function
+    } //RND: Modal Pop-up
+    
 }); //END Doc ready
     
     
@@ -85,11 +91,6 @@ function startSlideShow(){
 function stopSlideShow(){
         clearInterval(interval);
     }
-
-/* Function to toggle hamburger menu on mobile views */
-function hb_toggle_menu(){
-    $('.responsive_nav').toggleClass('responsive_nav_show');
-}
 
 /*Function to open side Nav*/
 function side_nav_open(){
