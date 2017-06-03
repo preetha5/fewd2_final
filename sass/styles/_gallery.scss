@@ -123,6 +123,13 @@
 
 
 /* Modal Pop Up Gallery */
+
+.popUpContainer:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
 .popUpImg{
     margin: .5em;
     float:left;

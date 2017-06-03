@@ -142,10 +142,12 @@ section.printOnly {
     width: 91.66%; }
 
   .col-ml-12 {
-    width: 100%;
-    float: none; } }
+    width: 100%; } }
 /* Tablet portrait */
 @media screen and (min-width: 768px) {
+  [class*="col-"] {
+    float: left; }
+
   .col-tb-1 {
     width: 8.33%; }
 
@@ -180,8 +182,7 @@ section.printOnly {
     width: 91.66%; }
 
   .col-tb-12 {
-    width: 100%;
-    float: none; } }
+    width: 100%; } }
 /* Large screens */
 @media screen and (min-width: 1200px) {
   .col-lg-1 {
@@ -218,8 +219,7 @@ section.printOnly {
     width: 91.66%; }
 
   .col-lg-12 {
-    width: 100%;
-    float: none; } }
+    width: 100%; } }
 /* Helper classes for the framework */
 /*Float classes*/
 .onLeft {
@@ -820,6 +820,11 @@ button {
   opacity: 1.0; }
 
 /* Modal Pop Up Gallery */
+.popUpContainer:after {
+  content: "";
+  display: block;
+  clear: both; }
+
 .popUpImg {
   margin: .5em;
   float: left;
