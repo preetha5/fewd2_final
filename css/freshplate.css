@@ -47,8 +47,7 @@ section.printOnly {
 /* All columns should be wrapped in a 'row' div and add up to 12 per row */
 /* For mobile portrait phones all columns will take 100% */
 [class*="col-"] {
-  width: 100%;
-  text-align: center; }
+  width: 100%; }
 
 .col-mp-1 {
   width: 8.33%;
@@ -96,8 +95,7 @@ section.printOnly {
 
 .col-mp-12 {
   width: 100%;
-  float: none;
-  text-align: center; }
+  float: none; }
 
 .row:after {
   content: "";
@@ -145,8 +143,7 @@ section.printOnly {
 
   .col-ml-12 {
     width: 100%;
-    float: none;
-    text-align: center; } }
+    float: none; } }
 /* Tablet portrait */
 @media screen and (min-width: 768px) {
   .col-tb-1 {
@@ -184,8 +181,7 @@ section.printOnly {
 
   .col-tb-12 {
     width: 100%;
-    float: none;
-    text-align: center; } }
+    float: none; } }
 /* Large screens */
 @media screen and (min-width: 1200px) {
   .col-lg-1 {
@@ -223,8 +219,7 @@ section.printOnly {
 
   .col-lg-12 {
     width: 100%;
-    float: none;
-    text-align: center; } }
+    float: none; } }
 /* Helper classes for the framework */
 /*Float classes*/
 .onLeft {
@@ -906,7 +901,6 @@ button {
   .modalImg {
     margin: auto;
     width: 60%; } }
-
 .parallax {
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
