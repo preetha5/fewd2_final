@@ -71,6 +71,22 @@
     }
 }
 
+.hng-p {
+   padding-left: 3rem;
+   text-indent:-2rem;
+	&:first-line {
+               font-weight: bold;
+               font-style: italic;
+}
+}
+ul.hng-lst {
+   width:80%;
+   margin-left:4rem;
+	li {
+	   text-indent: -2.5rem;
+}
+}
+
 .centerSection {
   margin: 0 auto;
 }
