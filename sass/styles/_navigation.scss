@@ -1,6 +1,5 @@
 /*********NAVIGATION STYLES*************/
 /* Responsive hamberger menu **/
-
 .responsive_nav_icon{
     cursor: pointer;
     display: inline-block;
@@ -212,7 +211,6 @@ and (orientation : landscape){
  .bottom_fixed_nav{
     position: fixed;
     bottom:0;
-	 left:0;
     width:100%;
     background-color: $navFixedBg;
  }
