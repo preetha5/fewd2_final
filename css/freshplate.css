@@ -1043,6 +1043,9 @@ thead {
     display: block;
     width: 90%;
     position: absolute;
-    bottom: 0; } }
+    bottom: 0; }
+
+  .noPrint {
+    display: none; } }
 
 /*# sourceMappingURL=freshplate.css.map */
