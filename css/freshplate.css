@@ -299,6 +299,19 @@ section.printOnly {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem; }
 
+.hng-p {
+  padding-left: 3rem;
+  text-indent: -2rem; }
+  .hng-p:first-line {
+    font-weight: bold;
+    font-style: italic; }
+
+ul.hng-lst {
+  width: 80%;
+  margin-left: 4rem; }
+  ul.hng-lst li {
+    text-indent: -2.5rem; }
+
 .centerSection {
   margin: 0 auto; }
 
@@ -307,11 +320,18 @@ section.printOnly {
   max-width: 100%;
   height: auto; }
 
+/* Helper class to not display the element on mobile devices */
+.notMobile {
+  display: none; }
+
 /**Media Queries **/
 @media screen and (min-width: 768px) {
   .btn_top {
     top: 88%;
-    right: 5%; } }
+    right: 5%; }
+
+  .notMobile {
+    display: block; } }
 /* General TAG Formats */
 p {
   padding: 8px 0; }
@@ -646,14 +666,14 @@ form {
     form button {
       padding: 15px 10px; } }
 /* Button styles for use globally */
-button {
+button, a.button {
   display: inline-block;
   padding: 15px;
   margin: .3em;
   font: bolder 1.2em/1.2 "Roboto", sans-serif; }
-  button:hover {
+  button:hover, a.button:hover {
     background-color: #ddd; }
-  button:active {
+  button:active, a.button:active {
     color: #eee;
     background-color: #000;
     border: solid 2px #eee; }
@@ -1043,10 +1063,13 @@ thead {
   a:after {
     content: "( " attr(href) " )"; }
 
-  section.printOnloy {
+  section.printOnly {
     display: block;
     width: 90%;
     position: absolute;
-    bottom: 0; } }
+    bottom: 0; }
+
+  .noPrint {
+    display: none; } }
 
 /*# sourceMappingURL=freshplate.css.map */
