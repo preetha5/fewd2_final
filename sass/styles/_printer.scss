@@ -23,10 +23,14 @@
         content: "( "attr(href)" )";
     }
 	
-	section.printOnloy {
+	section.printOnly {
 		display: block;
 		width: 90%;
 		position: absolute;
 		bottom: 0;
 	}
+    
+    .noPrint {
+        display:none;
+    }
 } //end Print media query
