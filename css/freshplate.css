@@ -47,55 +47,44 @@ section.printOnly {
 /* All columns should be wrapped in a 'row' div and add up to 12 per row */
 /* For mobile portrait phones all columns will take 100% */
 [class*="col-"] {
-  width: 100%; }
+  width: 100%;
+  float: left; }
 
 .col-mp-1 {
-  width: 8.33%;
-  float: left; }
+  width: 8.33%; }
 
 .col-mp-2 {
-  width: 16.66%;
-  float: left; }
+  width: 16.66%; }
 
 .col-mp-3 {
-  width: 25%;
-  float: left; }
+  width: 25%; }
 
 .col-mp-4 {
-  width: 33.33%;
-  float: left; }
+  width: 33.33%; }
 
 .col-mp-5 {
-  width: 41.66%;
-  float: left; }
+  width: 41.66%; }
 
 .col-mp-6 {
-  width: 50%;
-  float: left; }
+  width: 50%; }
 
 .col-mp-7 {
-  width: 58.33%;
-  float: left; }
+  width: 58.33%; }
 
 .col-mp-8 {
-  width: 66.66%;
-  float: left; }
+  width: 66.66%; }
 
 .col-mp-9 {
-  width: 75%;
-  float: left; }
+  width: 75%; }
 
 .col-mp-10 {
-  width: 83.33%;
-  float: left; }
+  width: 83.33%; }
 
 .col-mp-11 {
-  width: 91.66%;
-  float: left; }
+  width: 91.66%; }
 
 .col-mp-12 {
-  width: 100%;
-  float: none; }
+  width: 100%; }
 
 .row:after {
   content: "";
@@ -105,9 +94,6 @@ section.printOnly {
 /*******Media Queries ********/
 /* Mobile landscape */
 @media screen and (min-width: 600px) and (orientation: landscape) {
-  [class*="col-"] {
-    float: left; }
-
   .col-ml-1 {
     width: 8.33%; }
 
@@ -299,6 +285,19 @@ section.printOnly {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem; }
 
+.hng-p {
+  padding-left: 3rem;
+  text-indent: -2rem; }
+  .hng-p:first-line {
+    font-weight: bold;
+    font-style: italic; }
+
+ul.hng-lst {
+  width: 80%;
+  margin-left: 4rem; }
+  ul.hng-lst li {
+    text-indent: -2.5rem; }
+
 .centerSection {
   margin: 0 auto; }
 
@@ -373,10 +372,6 @@ em {
   font-size: inherit;
   font-style: normal;
   font-weight: 700; }
-
-img {
-  max-width: 100%;
-  height: auto; }
 
 a {
   color: #D2691E;
@@ -646,14 +641,14 @@ form {
     form button {
       padding: 15px 10px; } }
 /* Button styles for use globally */
-button {
+button, a.button {
   display: inline-block;
   padding: 15px;
   margin: .3em;
   font: bolder 1.2em/1.2 "Roboto", sans-serif; }
-  button:hover {
+  button:hover, a.button:hover {
     background-color: #ddd; }
-  button:active {
+  button:active, a.button:active {
     color: #eee;
     background-color: #000;
     border: solid 2px #eee; }
@@ -715,21 +710,21 @@ button {
 
 /* Button Sizes */
 .btnTinySq {
-  font: bolder 0.75rem "Roboto", sans-serif;
+  font: bolder 0.75em "Roboto", sans-serif;
   margin: .5rem;
   padding: 2px;
   width: 6rem;
   height: 6rem; }
 
 .btnMed {
-  font: bolder 1rem "Roboto", sans-serif;
+  font: bolder 1em "Roboto", sans-serif;
   margin: .5rem;
   padding: 2px;
-  width: 10rem;
+  width: 12rem;
   height: 4rem; }
 
 .btnLrg {
-  font: bolder 1.6rem "Roboto", sans-serif;
+  font: bolder 1.6em "Roboto", sans-serif;
   margin: .5rem;
   padding: 2px;
   width: 16rem;
@@ -737,9 +732,9 @@ button {
 
 .btnHuge {
   font: bolder 2.4em "Roboto", sans-serif;
-  margin: .5rem;
+  margin: .5em;
   padding: .25rem;
-  width: 50%;
+  width: 48vw;
   height: 7rem; }
 
 /* GALLERY 1- The AUTO-SLIDESHOW */
@@ -1030,7 +1025,7 @@ thead {
 
   html, body {
     font: normal 1em serif;
-    color: #000;
+    color: #fff;
     background-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -1038,15 +1033,19 @@ thead {
 
   a {
     font: italic 1em 'Times New Roman', Times, serif;
-    color: #666; }
+    color: #333; }
 
   a:after {
     content: "( " attr(href) " )"; }
 
-  section.printOnloy {
+  /* A class for something that shows only in the Printed copy. */
+  section.printOnly {
     display: block;
     width: 90%;
     position: absolute;
-    bottom: 0; } }
+    bottom: 0; }
+
+  .noPrint {
+    display: none; } }
 
 /*# sourceMappingURL=freshplate.css.map */
