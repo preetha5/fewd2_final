@@ -9,7 +9,7 @@
     }
     html, body {
 		font: normal 1em serif;
-        color: #000;    
+        color: #fff;
         background-color: transparent;
         -webkit-box-shadow:none;
         box-shadow:none;
@@ -17,16 +17,19 @@
     }
 	a {
 		font: italic 1em 'Times New Roman', Times, serif;
-		color: #666;
+		color: #333;
 	}
     a:after { //prints the actual URL after the anchor
         content: "( "attr(href)" )";
     }
-	
-	section.printOnloy {
+	/* A class for something that shows only in the Printed copy. */
+	section.printOnly {
 		display: block;
 		width: 90%;
 		position: absolute;
 		bottom: 0;
+	}
+	.noPrint {
+		display:none;
 	}
 } //end Print media query
