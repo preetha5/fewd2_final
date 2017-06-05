@@ -129,19 +129,26 @@
             display: block;
             clear: both;
         }
+.popUpContainer{
+    text-align: center;
+}
 
 .popUpImg{
-    margin: .5em;
-    float:left;
-    width:200px;
+    margin: 1em auto;
+    width: 50%;
+    padding: 1em;
     img {
     width:100%;
     border: solid 1px #ccc;
     border-radius: 5px;
     cursor: pointer;
     transition: .3s;
-    &:hover{
-        opacity: .7;
+    &:hover, &:focus{
+        opacity: .5;
+        box-shadow: 0 0 10px rgba(256,256,256,0.6);
+        -moz-box-shadow: 0 0 10px rgba(256,256,256,0.6);
+        -webkit-box-shadow: 0 0 10px rgba(256,256,256,0.6);
+        -o-box-shadow: 0 0 10px rgba(256,256,256,0.6);
         }
     }
 }
@@ -149,6 +156,8 @@
 .modal{
     display: none;
     position: fixed;
+    top: 10%;
+    left: 0;
     z-index: 1;
     width:100%;
     max-height: 90%;
@@ -201,6 +210,18 @@
 /*******MEDIA QUERIES ************/
 
 @media screen and (min-width:600px) and (orientation:landscape){
+
+    .popUpImg {
+        float: left;
+        width: 50%;
+        padding: 1em;
+    }
+    
+    .modal {
+        top: 0;
+        left: 0;
+        max-height: 100%;
+    }
     
     .modalImg {
         margin: 10% auto;
@@ -223,6 +244,14 @@
 }
 
 @media screen and (min-width:1200px){
+    
+    .popUpImg {
+        width: 25%;
+        img{
+            width:90%;
+        }
+    }
+    
     .modalImg {
         margin: auto;
         width: 60%;
