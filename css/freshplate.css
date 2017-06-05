@@ -15,7 +15,7 @@ html {
   /*Font fix for IOS phonds when swapping  disply portait v landscape*/ }
 
 /*IE 9 Display type fix */
-article, aside, audio, blockquote, figcaption, figure, footer, h1, h2, h3, h4, h5, h6, header, nav, p, section, main, video, ul, ol, div, section {
+article, aside, audio, blockquote, body, figcaption, figure, footer, h1, h2, h3, h4, h5, h6, header, nav, p, section, main, video, ul, ol, div, section {
   display: block;
   padding: 0;
   margin: 0;
@@ -1025,7 +1025,7 @@ thead {
 
   html, body {
     font: normal 1em serif;
-    color: #000;
+    color: #fff;
     background-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -1033,7 +1033,7 @@ thead {
 
   a {
     font: italic 1em 'Times New Roman', Times, serif;
-    color: #666; }
+    color: #333; }
 
   a:after {
     content: "( " attr(href) " )"; }
