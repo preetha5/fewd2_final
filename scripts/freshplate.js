@@ -68,8 +68,27 @@ $(document).ready(function(){
                 });
             }); //End popup click event
         });//END: Each function
-    } //RND: Modal Pop-up
+    } //END: Modal Pop-up
     
+     //Code to scroll to top of the page
+    $('.btn_top').click(function(e){
+        e.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop : 0},500);
+
+    });// END scroll to top function
+    
+    //Scroll to specific elements on the page (useful for single page websites)
+    //function to enable page scrolling
+    $('.scroll').on('click', function(e) { 
+        var target = $(this).attr('href');
+        if(target.length){
+            e.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: $(target).offset().top},500);
+        }
+    }); //End scroll function
+        
 }); //END Doc ready
     
     
