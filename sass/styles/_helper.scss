@@ -50,6 +50,22 @@
 .tx-right {
     text-align: right;
 }
+/* Scroll to top of page */
+.btn_top{
+    position: fixed;
+    top:90%;
+    right: 0;
+    z-index: 99;
+    border: solid 1px;;
+    outline: none;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    padding: .3em;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
 
 /* Specialty Presentation styles */
 .reverseTransparent {
@@ -78,3 +94,11 @@
 /*Responsive Image */
     .responsiveImg{max-width:100%;height:auto;}
 
+/**Media Queries **/
+@media screen and (min-width:768px){
+    
+    .btn_top {
+        top: 88%;
+        right: 5%;
+    }
+}
