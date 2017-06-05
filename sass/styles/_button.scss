@@ -1,6 +1,6 @@
 /* Button styles for use globally */
 
-button {
+button, a.button {
 	display:inline-block;
 	padding: 15px;
 	margin: .3em;
@@ -84,7 +84,7 @@ button {
 /* Button Sizes */
 
 .btnTinySq {
-	font:bolder .75rem $robot;
+	font:bolder .75em $robot;
 	margin:.5rem;
 	padding: 2px;
 	width: 6rem;
@@ -92,15 +92,15 @@ button {
 }
 
 .btnMed {
-	font:bolder 1rem $robot;
+	font:bolder 1em $robot;
 	margin:.5rem;
 	padding: 2px;
-	width:10rem;
+	width:12rem;
 	height: 4rem;
 }
 
 .btnLrg {
-	font:bolder 1.6rem $robot;
+	font:bolder 1.6em $robot;
 	margin:.5rem;
 	padding: 2px;
 	width:16rem;
@@ -108,9 +108,9 @@ button {
 }
 .btnHuge {
 	font: bolder 2.4em $robot;
-	margin:.5rem;
+	margin:.5em;
 	padding:.25rem;
-	width: 50%;
+	width: 48vw;
 	height: 7rem;
 }
 
