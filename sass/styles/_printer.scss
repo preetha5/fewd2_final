@@ -22,11 +22,12 @@
     a:after { //prints the actual URL after the anchor
         content: "( "attr(href)" )";
     }
-	
-	section.printOnloy {
+	/* A class for something that shows only in the Printed copy. */
+	section.printOnly {
 		display: block;
 		width: 90%;
 		position: absolute;
 		bottom: 0;
 	}
+
 } //end Print media query
