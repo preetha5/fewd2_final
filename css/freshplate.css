@@ -15,7 +15,7 @@ html {
   /*Font fix for IOS phonds when swapping  disply portait v landscape*/ }
 
 /*IE 9 Display type fix */
-article, aside, audio, blockquote, figcaption, figure, footer, h1, h2, h3, h4, h5, h6, header, nav, p, section, main, video, ul, ol, div, section {
+article, aside, audio, blockquote, body, figcaption, figure, footer, h1, h2, h3, h4, h5, h6, header, nav, p, section, main, video, ul, ol, div, section {
   display: block;
   padding: 0;
   margin: 0;
@@ -47,44 +47,55 @@ section.printOnly {
 /* All columns should be wrapped in a 'row' div and add up to 12 per row */
 /* For mobile portrait phones all columns will take 100% */
 [class*="col-"] {
-  width: 100%;
-  float: left; }
+  width: 100%; }
 
 .col-mp-1 {
-  width: 8.33%; }
+  width: 8.33%;
+  float: left; }
 
 .col-mp-2 {
-  width: 16.66%; }
+  width: 16.66%;
+  float: left; }
 
 .col-mp-3 {
-  width: 25%; }
+  width: 25%;
+  float: left; }
 
 .col-mp-4 {
-  width: 33.33%; }
+  width: 33.33%;
+  float: left; }
 
 .col-mp-5 {
-  width: 41.66%; }
+  width: 41.66%;
+  float: left; }
 
 .col-mp-6 {
-  width: 50%; }
+  width: 50%;
+  float: left; }
 
 .col-mp-7 {
-  width: 58.33%; }
+  width: 58.33%;
+  float: left; }
 
 .col-mp-8 {
-  width: 66.66%; }
+  width: 66.66%;
+  float: left; }
 
 .col-mp-9 {
-  width: 75%; }
+  width: 75%;
+  float: left; }
 
 .col-mp-10 {
-  width: 83.33%; }
+  width: 83.33%;
+  float: left; }
 
 .col-mp-11 {
-  width: 91.66%; }
+  width: 91.66%;
+  float: left; }
 
 .col-mp-12 {
-  width: 100%; }
+  width: 100%;
+  float: none; }
 
 .row:after {
   content: "";
@@ -94,6 +105,9 @@ section.printOnly {
 /*******Media Queries ********/
 /* Mobile landscape */
 @media screen and (min-width: 600px) and (orientation: landscape) {
+  [class*="col-"] {
+    float: left; }
+
   .col-ml-1 {
     width: 8.33%; }
 
@@ -131,6 +145,9 @@ section.printOnly {
     width: 100%; } }
 /* Tablet portrait */
 @media screen and (min-width: 768px) {
+  [class*="col-"] {
+    float: left; }
+
   .col-tb-1 {
     width: 8.33%; }
 
@@ -337,6 +354,10 @@ em {
   font-style: normal;
   font-weight: 700; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 a {
   color: #D2691E;
   text-decoration: none; }
@@ -521,6 +542,7 @@ a:active {
   .bottom_fixed_nav {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
     background-color: #fafbf5; }
 
@@ -671,21 +693,21 @@ button {
 
 /* Button Sizes */
 .btnTinySq {
-  font: bolder 0.75em "Roboto", sans-serif;
+  font: bolder 0.75rem "Roboto", sans-serif;
   margin: .5rem;
   padding: 2px;
   width: 6rem;
   height: 6rem; }
 
 .btnMed {
-  font: bolder 1em "Roboto", sans-serif;
+  font: bolder 1rem "Roboto", sans-serif;
   margin: .5rem;
   padding: 2px;
-  width: 12rem;
+  width: 10rem;
   height: 4rem; }
 
 .btnLrg {
-  font: bolder 1.6em "Roboto", sans-serif;
+  font: bolder 1.6rem "Roboto", sans-serif;
   margin: .5rem;
   padding: 2px;
   width: 16rem;
@@ -693,9 +715,9 @@ button {
 
 .btnHuge {
   font: bolder 2.4em "Roboto", sans-serif;
-  margin: .5em;
+  margin: .5rem;
   padding: .25rem;
-  width: 48vw;
+  width: 50%;
   height: 7rem; }
 
 /* GALLERY 1- The AUTO-SLIDESHOW */
@@ -798,6 +820,11 @@ button {
   opacity: 1.0; }
 
 /* Modal Pop Up Gallery */
+.popUpContainer:after {
+  content: "";
+  display: block;
+  clear: both; }
+
 .popUpImg {
   margin: .5em;
   float: left;
