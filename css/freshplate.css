@@ -641,14 +641,14 @@ form {
     form button {
       padding: 15px 10px; } }
 /* Button styles for use globally */
-button, a[type='button'] {
+button, a.button {
   display: inline-block;
   padding: 15px;
   margin: .3em;
   font: bolder 1.2em/1.2 "Roboto", sans-serif; }
-  button:hover, a[type='button']:hover {
+  button:hover, a.button:hover {
     background-color: #ddd; }
-  button:active, a[type='button']:active {
+  button:active, a.button:active {
     color: #eee;
     background-color: #000;
     border: solid 2px #eee; }
