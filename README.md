@@ -1,28 +1,24 @@
-<<<<<<< HEAD
-(Note: highly under construction!!)
+# [Freshplate](https://github.com/preetha5/freshplate)
+Freshplate is a lightweight customizable front-end framework that gives you the power to build fast and adaptable websites with contemporary styling. 
 
-=======
->>>>>>> 530637b1d622bc7b7190528bef0aec69f8dfe51a
-# [Freshplate](https://github.com/preetha5/fewd2_final)
-Freshplate is a highly customizable front-end framework for building fast and adaptable websites.
-
-* Source: [https://github.com/preetha5/fewd2_final] (https://github.com/preetha5/fewd2_final)
-<<<<<<< HEAD
-* [Index of test pages](http://freshplate.servicefocuseddesign.com/)
-=======
-* [Testing Ground](http://freshplate.servicefocuseddesign.com/)
->>>>>>> 530637b1d622bc7b7190528bef0aec69f8dfe51a
+### [Official website](http://freshplate.servicefocuseddesign.com/)
+### [Source](https://github.com/preetha5/fewd2_final) 
 
 ## Features
-* to be determined
-* to be determined
-* to be determined
-* to be determined
+* Reset library that standardizes HTML tags across browsers
+* 12 column grid system with breakpoints for mobile, tablet, and larger screen views
+* Minimalist and responsive styles for typography, tables, forms, and buttons
+* Flexible navigation bars, instagram integration, and more
 
 ## Getting Started
 
-Clone or download this repository. Use our provided starter html file or build your own. All you need to do is to properly link to the css and js files. You must include a link to jquery version 2.2.4 in the head of your html doc:
+Clone or download this repository. You can use our provided starter html file or simply build your own. Just make sure you properly link to the freshplate css file. 
 
+```
+<link href="../css/freshplate.css" type="text/css" rel="stylesheet" />
+<!--   add your css styles here   -->
+```
+You must also include a link to jquery version 2.2.4 somewhere before the freshplate js file:
 ```
 <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -30,29 +26,20 @@ Clone or download this repository. Use our provided starter html file or build y
   crossorigin="anonymous"></script>
 
 <script src="../scripts/freshplate.js" type="text/javascript"></script>
+
+<!--   add your javascript files below   -->
 ```
 
-<<<<<<< HEAD
-See the [freshplate site] (https://freshplateframeworkplaceholdersite.com/) for further details. 
-
 ## Documentation
 
-Guides and demos on how to use freshplate can be found at [https://freshplateframework.com/] (https://freshplateframeworkplaceholdersite.com/). 
-=======
-See the [freshplate site](https://freshplateframeworkplaceholdersite.com/) for further details. 
+Guides and demos on how to use Freshplate can be found [on the Freshplate website](http://freshplate.servicefocuseddesign.com/). 
 
-## Documentation
+## Collaboration
+If you have any suggestions or comments, please reach out to us! Feel free to fork this repository, make some improvements, and submit a pull request. 
 
-Guides and demos on how to use freshplate can be found at [https://freshplateframework.com/](https://freshplateframeworkplaceholdersite.com/). 
->>>>>>> 530637b1d622bc7b7190528bef0aec69f8dfe51a
-
-## Authors 
+## Credit 
 
 * [Preetha](https://github.com/preetha5)
 * [Jane](https://github.com/janelamotte)
 * [Gregor](https://github.com/uspsureshot)
-<<<<<<< HEAD
 * [Sherry](https://github.com/karidosis)
-=======
-* [Sherry](https://github.com/karidosis)
->>>>>>> 530637b1d622bc7b7190528bef0aec69f8dfe51a
