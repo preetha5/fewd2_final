@@ -306,10 +306,10 @@ section.printOnly {
     font-weight: bold;
     font-style: italic; }
 
-ul.hng-lst {
+ul.hng-lst, ol.hng-lst {
   width: 80%;
   margin-left: 4rem; }
-  ul.hng-lst li {
+  ul.hng-lst li, ol.hng-lst li {
     text-indent: -2.5rem; }
 
 .centerSection {
